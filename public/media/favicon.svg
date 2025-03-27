@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2"><rect
+       x="32"
+       y="32"
+       width="336"
+       height="358.4"
+       id="rect324" /><rect
+       x="32"
+       y="32"
+       width="336"
+       height="358.4"
+       id="rect4882" /></defs><g
+     id="layer2"
+     style="display:inline"><g
+       id="layer7"><path
+         id="rect859"
+         style="display:inline;fill:#dddddd;stroke-width:6;stroke-linecap:round;stroke-linejoin:round"
+         d="m 432,121.6 c 32,0 48,16 48,48 V 432 c 0,32 -16,48 -48,48 H 256 V 121.6 Z" /><text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:256px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#353535;fill-opacity:1;stroke-width:6;stroke-linecap:round;stroke-linejoin:round"
+         x="368"
+         y="371.20001"
+         id="text5991"><tspan
+           id="tspan5989"
+           x="368"
+           y="371.20001">ϕ</tspan></text></g><g
+       id="layer3"
+       style="display:inline"><path
+         style="display:inline;fill:#cc99ff;fill-opacity:1;stroke-width:6;stroke-linecap:round;stroke-linejoin:round"
+         d="m 256,32 56,358.4 H 256 80 c -32,0 -48,-16 -48,-48 V 80 C 32,48 48.368214,32 80,32 h 176"
+         id="path3056" /><text
+         xml:space="preserve"
+         id="text322"
+         style="font-weight:bold;font-size:256px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;white-space:pre;shape-inside:url(#rect324);display:inline;fill:#ffffff;fill-opacity:1;stroke-width:6;stroke-linecap:round;stroke-linejoin:round"
+         transform="translate(-39.950011,50.51248)"><tspan
+           x="121.28003"
+           y="258.52805"
+           id="tspan8143">λ</tspan></text><path
+         style="fill:#a179c9;fill-opacity:1;stroke-width:6;stroke-linecap:round;stroke-linejoin:round"
+         d="M 312,390.4 256,480 v -89.6 z"
+         id="path2245" /></g></g><g
+     id="layer1"
+     style="display:none" /></svg>
