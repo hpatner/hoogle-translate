@@ -575,6 +575,15 @@
   [:div {:style {:search-text ""
                  :text-align "center"
                  :padding (@state :top-padding)}}
+   [:a {:href "https://www.youtube.com/c/codereport"
+        :style (styles/logo-link)}
+    [:img {:src "/media/code_report_circle.png"
+           :style (styles/logo-image)
+           :on-mouse-over (fn [e] 
+                           (-> e .-target .-style .-transform (set! "scale(1.25)")))
+           :on-mouse-out (fn [e] 
+                          (-> e .-target .-style .-transform (set! "scale(1)")))}]]
+   
    [:label {:style {:color "darkviolet"
                     :font-family "'JetBrains Mono', monospace"
                     :font-size "50"
@@ -626,6 +635,3 @@
   (rdom/render
    [app-view]
    (js/document.getElementById "app")))
-
-
-

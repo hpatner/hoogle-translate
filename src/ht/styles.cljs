@@ -15,4 +15,16 @@
   {:style {:display "flex" 
            :gap "10px" 
            :justify-content "center" 
-           :margin-top "10px"}}) 
+           :margin-top "10px"}})
+
+(defn logo-link []
+  {:position "absolute"
+   :right "30px"
+   :top "30px"
+   :cursor "pointer"})
+
+(defn logo-image []
+  {:height "60px"
+   :width "60px"
+   :transition "all 0.2s ease-in-out"
+   :transform "scale(1)"})
