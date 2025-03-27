@@ -6,6 +6,7 @@
    [stylefy.core :as stylefy]
    [ht.styles :as styles]
    [ht.data :as data]
+   [ht.imgs :as imgs]
    ["react-social-icons" :refer [SocialIcon]]))
 
 (defonce state (r/atom {:top-padding "250px"
@@ -13,49 +14,6 @@
 
 (defonce debug (r/atom {:info ""}))
 
-
-
-(def logo-map
-  {"APL"        "apl_logo.png"
-   "BASH"       "bash_logo.png"
-   "BQN"        "bqn_logo.svg"
-   "C++"        "cpp_logo.png"
-   "C#"         "csharp_logo.png"
-   "Clojure"    "clojure_logo.png"
-   "Crystal"    "crystal_logo.svg"
-   "CUDA"       "thrust_logo.jfif"
-   "D"          "d_logo.png"
-   "Elixir"     "elixir_logo.png"
-   "Elm"        "elm_logo.png"
-   "Erlang"     "erlang_logo.png"
-   "F#"         "fsharp_logo.png"
-   "Fortran"    "fortran_logo.png"
-   "Go"         "go_logo.png"
-   "Groovy"     "groovy_logo.jpeg"
-   "Haskell"    "haskell_logo.svg"
-   "J"          "j_logo.png"
-   "Java"       "java_logo.png"
-   "JavaScript" "javascript_logo.png"
-   "Julia"      "julia_logo.svg"
-   "Kotlin"     "kotlin_logo.png"
-   "LISP"       "LISP_logo.png"
-   "Lua"        "lua_logo.png"
-   "Nim"        "nim_logo.png"
-   "OCaml"      "ocaml_logo.jpg"
-   "q"          "kx-logo.png"
-   "pandas"     "pandas-logo3.png"
-   "Pharo"      "pharo_logo.png"
-   "Python"     "python_logo.png"
-   "R"          "r_logo.png"
-   "Racket"     "racket_logo.png"
-   "RAPIDS (C++)"  "rapids_logo.png"
-   "RAPIDS (Python)"  "rapids_logo.png" ;; TODO longterm fix
-   "Ruby"       "ruby_logo.png"
-   "Rust"       "rust_logo.png"
-   "Scala"      "scala_logo2.png"
-   "Swift"      "swift_logo.png"
-   "TypeScript" "ts.png"
-   "Zig"        "zig_logo.svg"})
 
 ; (defn extract-lang [s]
 ;   (first (str/split s #"@")))
@@ -132,7 +90,7 @@
 
    ::stylefy/mode {:on-hover {:background-color "purple"}} ;; TODO make work
    }
-   [:td [:img {:src (str/join ["/media/logos/" (get logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
+   [:td [:img {:src (str/join ["/media/logos/" (get imgs/logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
    [:td {:style {:padding "12px 30px"}} (get info-map :lang)]
    [:td {:style {:padding "12px 30px"
                  :font-weight "bold"
@@ -185,7 +143,7 @@
 
 (defn decide-how [input]
   (cond 
-    (in? (->> logo-map
+    (in? (->> imgs/logo-map
               (keys)
               (map str/lower-case))
          (str/lower-case input)) :by-lang ;; TODO figure out why this lower-case isn't working
