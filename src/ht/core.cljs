@@ -185,6 +185,15 @@
    [social-icon {:url "https://www.youtube.com/c/codereport"}]
    [social-icon {:url "https://www.github.com/codereport"}]])
 
+(def footnote {:style {:font-size 12}})
+
+(defn footnotes []
+  [:div {:style {:font-size 12 :font-family "'JetBrains Mono', monospace"}}
+   [:br]
+   [:label "If you would like to contribute a missing language or algorithm, "]
+   [:a {:href "https://github.com/codereport/hoogle-translate/blob/main/CONTRIBUTING.md"} [:label "file a PR"]]
+   [:label "."]])
+
 (defn app-view []
   [:div {:style {:search-text ""
                  :text-align "center"
@@ -243,6 +252,10 @@
      [:div
       [:label (styles/font 25) "by code_report"]
       [social-links]])
+      
+   ;; Only show footnotes when results are showing (top-padding is not 250px)
+   (when (not= (@state :top-padding) "250px")
+     [footnotes])
    ])
 
 (defn render! []
