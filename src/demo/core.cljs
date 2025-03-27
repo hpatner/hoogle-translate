@@ -561,7 +561,7 @@
    [:label {:style {:color "darkviolet"
                     :font-family "Verdana"
                     :font-size "50"
-                    :font-weight "bold"}} "Programming Language Rankings"]
+                    :font-weight "bold"}} "Hoogle Translate"]
    [:br]
    [:label (@debug :info)]
    [:br]
