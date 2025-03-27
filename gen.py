@@ -29,7 +29,6 @@ def parse_md_table(content):
             algo_id = columns[2]
             library = columns[3].replace("`", "")
             doc_link = columns[4][6:-1]
-            print(doc_link)
             example_link = columns[5] if len(columns) > 5 else "TODO"
 
             # Add to data rows
