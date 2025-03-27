@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 
-
 def parse_md_table(content):
     """Parse a markdown table and extract data rows."""
     lines = content.strip().split("\n")
@@ -29,7 +28,8 @@ def parse_md_table(content):
             algo = columns[1].replace("`", "")  # Strip backticks
             algo_id = columns[2]
             library = columns[3].replace("`", "")
-            doc_link = columns[4]
+            doc_link = columns[4][6:-1]
+            print(doc_link)
             example_link = columns[5] if len(columns) > 5 else "TODO"
 
             # Add to data rows
