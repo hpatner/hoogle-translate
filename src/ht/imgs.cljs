@@ -17,7 +17,7 @@
    "Common Lisp"          "common_lisp.png"
    "Crystal"              "crystal_logo.svg"
    "CSS"                  "css_logo.png"
-   "Cuda"                 "cuda.jpg"
+   "CUDA"                 "thrust_logo.jfif"
    "Thrust"               "thrust_logo.jfif"
    "D"                    "d_logo.png"
    "Dart"                 "dart_logo.png"
