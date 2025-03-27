@@ -537,7 +537,7 @@
     :else :by-algo))
 
 (defn generate-table [selection how-to-generate-table]
-  [:table {:style {:font-family "Consolas"
+  [:table {:style {:font-family "'JetBrains Mono', monospace"
                    :padding "12px 12px"
                    :font-size "30"
                    :margin-left "auto"
@@ -559,7 +559,7 @@
                  :text-align "center"
                  :padding (@state :top-padding)}}
    [:label {:style {:color "darkviolet"
-                    :font-family "Verdana"
+                    :font-family "'JetBrains Mono', monospace"
                     :font-size "50"
                     :font-weight "bold"}} "Hoogle Translate"]
    [:br]
@@ -572,7 +572,7 @@
              :margin "8px 0"
              :width "600px"
              :font-size "30"
-             :font-family "Consolas"
+             :font-family "'JetBrains Mono', monospace"
              :border-radius "25px"
              :border "2px solid grey"
              :outline-width "0"
