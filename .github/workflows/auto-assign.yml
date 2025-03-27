@@ -8,6 +8,7 @@ on:
 permissions:
   issues: write
   pull-requests: write
+  contents: read
 
 jobs:
   assign:
@@ -20,11 +21,8 @@ jobs:
           assignees: codereport
           numOfAssignee: 1
       
-      # Handle PRs
-      - if: github.event_name == 'pull_request'
-        uses: toshimaru/auto-author-assign@v2.1.1
+      # Handle PRs - use one action that can handle both assignments and reviews
       - if: github.event_name == 'pull_request'
         uses: kentaro-m/auto-assign-action@v1.2.5
         with:
-          reviewers: codereport
-          numberOfReviewers: 1
+          configuration-path: .github/auto-assign-config.yml
