@@ -475,7 +475,7 @@
 
    ::stylefy/mode {:on-hover {:background-color "purple"}} ;; TODO make work
    }
-   [:td [:img {:src (str/join ["/media/" (get logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
+   [:td [:img {:src (str/join ["/media/logos/" (get logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
    [:td {:style {:padding "12px 30px"}} (get info-map :lang)]
    [:td {:style {:padding "12px 30px"
                  :font-weight "bold"
