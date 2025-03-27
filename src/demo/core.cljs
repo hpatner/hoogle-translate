@@ -539,7 +539,7 @@
 (defn generate-table [selection how-to-generate-table]
   [:table {:style {:font-family "'JetBrains Mono', monospace"
                    :padding "12px 12px"
-                   :font-size "30"
+                   :font-size "20" ; this is for the rows
                    :margin-left "auto"
                    :margin-right "auto"
                    :text-align "center"}}
@@ -571,7 +571,7 @@
      :style {:padding "12px 20px"
              :margin "8px 0"
              :width "600px"
-             :font-size "30"
+             :font-size "30" ; this is for the search box
              :font-family "'JetBrains Mono', monospace"
              :border-radius "25px"
              :border "2px solid grey"
