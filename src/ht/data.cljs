@@ -289,4 +289,5 @@
 "J@/ (table)" {:lang "J" :algo "/ (table)" :lib "" :id 6 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash#dyadic" :sig "`TODO`"}
 "Rust@counts" {:lang "Rust" :algo "counts" :lib "Itertools" :id 19 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.counts" :sig "`TODO`"}
 "C++@adjacent_transform" {:lang "C++" :algo "adjacent_transform" :lib "<ranges>" :id 5 :doc "https://en.cppreference.com/w/cpp/ranges/adjacent_transform_view" :sig "`TODO`"}
+"Gleam@map" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/0.8.0/gleam/list/#map" :sig "`TODO`"}
 })
