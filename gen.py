@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import re
 
 
 def parse_md_table(content):
@@ -69,7 +68,7 @@ def generate_clojure_map(data_rows):
 
 def main():
     # Read ALGORITHMS.md file from root directory
-    with open("ALGORITHMS.md", "r", encoding="utf-8") as file:
+    with open("ALGORITHMS.md", encoding="utf-8") as file:
         content = file.read()
 
     # Parse the markdown table
