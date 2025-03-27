@@ -4,7 +4,8 @@
    [reagent.core :as r]
    [clojure.string :as str]
    [stylefy.core :as stylefy]
-   ))
+   [ht.styles :as styles]
+   ["react-social-icons" :refer [SocialIcon]]))
 
 (defonce state (r/atom {:top-padding "250px"
                         :results-table [:tr]}))
@@ -554,6 +555,22 @@
 
   ])
 
+(defn social-icon [props]
+  [:> SocialIcon (merge {:style (styles/social-icon-style)}
+                       {:onMouseOver (fn [e] 
+                                      (-> e .-currentTarget .-style .-transform (set! "scale(1.25)")))
+                        :onMouseOut (fn [e] 
+                                     (-> e .-currentTarget .-style .-transform (set! "scale(1)")))}
+                       props)])
+
+(defn social-links []
+  [:div (styles/social-links-container)
+   [social-icon {:url "https://bsky.app/profile/codereport.bsky.social"}]
+   [social-icon {:url "https://mastodon.social/@code_report" :network "mastodon"}]
+   [social-icon {:url "https://www.twitter.com/code_report"}]
+   [social-icon {:url "https://www.youtube.com/c/codereport"}]
+   [social-icon {:url "https://www.github.com/codereport"}]])
+
 (defn app-view []
   [:div {:style {:search-text ""
                  :text-align "center"
@@ -598,6 +615,11 @@
 
    (@state :results-table)
    
+   ;; Only show attribution and social links when no results are showing (top-padding is 250px)
+   (when (= (@state :top-padding) "250px")
+     [:div
+      [:label (styles/font 25) "by code_report"]
+      [social-links]])
    ])
 
 (defn render! []
