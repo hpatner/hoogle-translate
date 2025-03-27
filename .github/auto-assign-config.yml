@@ -1,5 +1,4 @@
 # Set to true to assign PR author as assignee
-addAssignees: true
 addAssignees: author
 
 # Set reviewers
