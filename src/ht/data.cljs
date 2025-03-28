@@ -291,5 +291,5 @@
 "Gleam@map" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map" :sig "-"}
 "Gleam@range" {:lang "Gleam" :algo "range" :lib "list" :id 8 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#range" :sig "-"}
 "Gleam@map2" {:lang "Gleam" :algo "map2" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map2" :sig "-"}
-"Gleam@scan" {:lang "Gleam" :algo "scan" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
+"Gleam@scan" {:lang "Gleam" :algo "scan" :lib "list" :id 4 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
 })
