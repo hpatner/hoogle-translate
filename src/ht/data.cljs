@@ -187,7 +187,6 @@
 "D@repeat" {:lang "D" :algo "repeat" :lib "range" :id 24 :doc "https://dlang.org/library/std/range/repeat.html" :sig "`TODO`"}
 "Rust@repeat" {:lang "Rust" :algo "repeat" :lib "Iter" :id 24 :doc "https://doc.rust-lang.org/std/iter/struct.Repeat.html" :sig "`TODO`"}
 "Haskell@replicate" {:lang "Haskell" :algo "replicate" :lib "Prelude" :id 25 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:replicate" :sig "`TODO`"}
-"Cojure@repeat" {:lang "Cojure" :algo "repeat" :lib "core" :id 25 :doc "https://clojuredocs.org/clojure.core/repeat" :sig "`TODO`"}
 "C++@repeat_n" {:lang "C++" :algo "repeat_n" :lib "range-v3" :id 25 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "`TODO`"}
 "C#@repeat" {:lang "C#" :algo "repeat" :lib "Enumerable" :id 25 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.repeat?view=netcore-3.1" :sig "`TODO`"}
 "APL@\\ (expand)" {:lang "APL" :algo "\\ (expand)" :lib "-" :id 25 :doc "http://microapl.com/apl_help/ch_020_020_860.htm" :sig "`TODO`"}
