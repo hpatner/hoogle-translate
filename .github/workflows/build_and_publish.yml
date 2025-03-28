@@ -4,8 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'src/ht/**/*.clj'
-      - 'src/ht/**/*.cljs'
+      - 'src/**'
       - 'shadow-cljs.edn'
   # Add manual trigger option
   workflow_dispatch:
