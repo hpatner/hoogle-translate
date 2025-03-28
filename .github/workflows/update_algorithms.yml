@@ -37,5 +37,14 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-    # The ClojureScript Build and Deploy workflow will automatically trigger since
-    # we updated a file in src/ht/ which is in its path configuration 
+    - name: Trigger Build and Deploy Workflow
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} # Use the default token here too
+        script: |
+          await github.rest.actions.createWorkflowDispatch({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            workflow_id: 'build_and_publish.yml',
+            ref: 'main' // Or use context.ref if needed for the specific branch that triggered this workflow
+          })
