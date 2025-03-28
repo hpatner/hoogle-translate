@@ -22,14 +22,13 @@ def parse_md_table(content):
         # Remove empty first and last elements from split
         columns = [col for col in columns if col]
 
-        if len(columns) >= 6:  # Ensure we have enough columns
-            # Language, Algorithm, ID, Doc Link, Library, Example Link
+        if len(columns) >= 5:  # Ensure we have enough columns
+            # Language, Algorithm, ID, Doc Link, Library
             language = columns[0]
             algo = columns[1].replace("`", "")  # Strip backticks
             algo_id = columns[2]
             library = columns[3].replace("`", "")
             doc_link = columns[4][6:-1]
-            example_link = columns[5] if len(columns) > 5 else "TODO"
 
             # Add to data rows
             data_rows.append(
@@ -39,7 +38,7 @@ def parse_md_table(content):
                     "id": algo_id,
                     "doc": doc_link,
                     "lib": library,
-                    "sig": example_link,
+                    "sig": "TODO",
                 }
             )
 
