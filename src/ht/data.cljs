@@ -271,7 +271,7 @@
 "Elm@uniq" {:lang "Elm" :algo "uniq" :lib "List" :id 15 :doc "https://package.elm-lang.org/packages/mgold/elm-nonempty-list/latest/List-Nonempty#uniq" :sig "-"}
 "F#@distinct" {:lang "F#" :algo "distinct" :lib "Seq" :id 15 :doc "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#distinct" :sig "-"}
 "Pharo@removeDuplicates" {:lang "Pharo" :algo "removeDuplicates" :lib "OrderedCollection" :id 15 :doc "" :sig "-"}
-"BQN@  (scan) " {:lang "BQN" :algo "  (scan) " :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-"}
+"BQN@ ` (scan) " {:lang "BQN" :algo " ` (scan) " :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-"}
 "BQN@˝ (insert)" {:lang "BQN" :algo "˝ (insert)" :lib "-" :id 1 :doc "https://mlochbaum.github.io/BQN/help/insert.html" :sig "-"}
 "Kotlin@fold" {:lang "Kotlin" :algo "fold" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/fold.html" :sig "-"}
 "Kotlin@runningFold" {:lang "Kotlin" :algo "runningFold" :lib "collections" :id 4 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/running-fold.html" :sig "-"}
@@ -282,14 +282,16 @@
 "Pharo@inject:into:" {:lang "Pharo" :algo "inject:into:" :lib "Collection" :id 1 :doc "" :sig "-"}
 "Pharo@reduce:" {:lang "Pharo" :algo "reduce:" :lib "Collection" :id 1 :doc "" :sig "-"}
 "Pharo@fold:" {:lang "Pharo" :algo "fold:" :lib "Collection" :id 1 :doc "" :sig "-"}
-"BQN@´ (fold)" {:lang "BQN" :algo "´ (fold)" :lib "" :id 1 :doc "https://mlochbaum.github.io/BQN/help/fold.html" :sig "-"}
-"APL@⌿ (reduce first)" {:lang "APL" :algo "⌿ (reduce first)" :lib "" :id 1 :doc "https://microapl.com/apl_help/ch_020_020_810.htm" :sig "-"}
-"BQN@⌜ (table)" {:lang "BQN" :algo "⌜ (table)" :lib "" :id 6 :doc "https://mlochbaum.github.io/BQN/help/table.html" :sig "-"}
-"J@/ (table)" {:lang "J" :algo "/ (table)" :lib "" :id 6 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash#dyadic" :sig "-"}
+"BQN@´ (fold)" {:lang "BQN" :algo "´ (fold)" :lib "-" :id 1 :doc "https://mlochbaum.github.io/BQN/help/fold.html" :sig "-"}
+"APL@⌿ (reduce first)" {:lang "APL" :algo "⌿ (reduce first)" :lib "-" :id 1 :doc "https://microapl.com/apl_help/ch_020_020_810.htm" :sig "-"}
+"BQN@⌜ (table)" {:lang "BQN" :algo "⌜ (table)" :lib "-" :id 6 :doc "https://mlochbaum.github.io/BQN/help/table.html" :sig "-"}
+"J@/ (table)" {:lang "J" :algo "/ (table)" :lib "-" :id 6 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash#dyadic" :sig "-"}
 "Rust@counts" {:lang "Rust" :algo "counts" :lib "Itertools" :id 19 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.counts" :sig "-"}
 "C++@adjacent_transform" {:lang "C++" :algo "adjacent_transform" :lib "<ranges>" :id 5 :doc "https://en.cppreference.com/w/cpp/ranges/adjacent_transform_view" :sig "-"}
 "Gleam@map" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map" :sig "-"}
 "Gleam@range" {:lang "Gleam" :algo "range" :lib "list" :id 8 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#range" :sig "-"}
 "Gleam@map2" {:lang "Gleam" :algo "map2" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map2" :sig "-"}
 "Gleam@scan" {:lang "Gleam" :algo "scan" :lib "list" :id 4 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
+"Kap@⌻ (outer product)" {:lang "Kap" :algo "⌻ (outer product)" :lib "-" :id 6 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_outer_product" :sig "-"}
+"Uiua@⊞ (table)" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/tables" :sig "-"}
 })
