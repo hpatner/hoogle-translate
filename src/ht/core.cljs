@@ -85,6 +85,8 @@
      {:on-click
       (fn [_] ((reset! state {:top-padding "20px"
                               :theme current-theme
+                              :selection (get info-map :id)
+                              :how-to-generate-table :by-algo-id
                               :results-table (generate-table (get info-map :id) :by-algo-id)})))
       ::stylefy/mode {:on-hover {:background-color (:hover colors)}}}
      [:td [:img {:src (str/join ["/media/logos/" (get imgs/logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
@@ -210,12 +212,16 @@
                      top-padding (:top-padding current-state)]
                  ;; If there are search results showing, regenerate the table
                  (if (= top-padding "20px")
-                   (let [selection (some-> current-state :search-text)
-                         how-to-generate-table (decide-how selection)]
+                   (let [selection (or (:selection current-state) (:search-text current-state))
+                         how-to-generate-table (or (:how-to-generate-table current-state) 
+                                                  (when selection (decide-how selection)))]
                      (reset! state {:top-padding top-padding
                                     :theme new-theme
-                                    :search-text selection
-                                    :results-table (generate-table selection how-to-generate-table)}))
+                                    :selection selection
+                                    :search-text (:search-text current-state)
+                                    :how-to-generate-table how-to-generate-table
+                                    :results-table (when (and selection how-to-generate-table)
+                                                    (generate-table selection how-to-generate-table))}))
                    ;; Otherwise just update the theme
                    (reset! state (assoc current-state :theme new-theme)))
                  (update-body-styles new-theme))}
