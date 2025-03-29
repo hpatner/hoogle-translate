@@ -25,7 +25,7 @@ def parse_md_table(content):
         if len(columns) >= 5:  # Ensure we have enough columns
             # Language, Algorithm, ID, Doc Link, Library
             language = columns[0]
-            algo = columns[1].replace("`", "")  # Strip backticks
+            algo = columns[1].strip("`")  # Strip backticks
             algo_id = columns[2]
             library = columns[3].replace("`", "")
             doc_link = columns[4][6:-1]
