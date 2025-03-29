@@ -10,7 +10,8 @@
    ["react-social-icons" :refer [SocialIcon]]))
 
 (defonce state (r/atom {:top-padding "250px"
-                        :results-table [:tr]}))
+                        :results-table [:tr]
+                        :theme :light}))
 
 (defonce debug (r/atom {:info ""}))
 
@@ -77,28 +78,25 @@
                    "#FFFF99" "#FFCC99" "#FF99CC" "white"]) 
 
 (defn generate-row [info-map color-index]
-  [:tr 
-  ;  (use-style tr-hover-style)
-  ;  {:style (use-style tr-hover-style)}
-    ; {:style [:&:hover {:background-color "#f1f1f1"}]}
-  ;  []^{:pseudo {:hover {:background-color "purple"}}}
-  ;  {:style {:tr:hover {:background-color "purple"}}}
-  ;  {:.item:hover {:background-color "#f5f5f5"}}
-  {:on-click
-   (fn [_] ((reset! state {:top-padding "20px"
-                           :results-table (generate-table (get info-map :id) :by-algo-id)})))
-
-   ::stylefy/mode {:on-hover {:background-color "purple"}} ;; TODO make work
-   }
-   [:td [:img {:src (str/join ["/media/logos/" (get imgs/logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
-   [:td {:style {:padding "12px 30px"}} (get info-map :lang)]
-   [:td {:style {:padding "12px 30px"
-                 :font-weight "bold"
-                 :background-color (nth excel-colors color-index)
-                ;  :border "2px solid black"
-                 }}  (get info-map :algo)]
-   [:td {:style {:padding "12px 30px"}} (get info-map :lib)]
-   [:td {:style {:padding "12px 30px"}} [:a {:href (get info-map :doc)} "Doc"]]])
+  (let [current-theme (@state :theme)
+        colors (get styles/theme-colors current-theme)
+        text-color (:text colors)]
+    [:tr 
+     {:on-click
+      (fn [_] ((reset! state {:top-padding "20px"
+                              :theme current-theme
+                              :results-table (generate-table (get info-map :id) :by-algo-id)})))
+      ::stylefy/mode {:on-hover {:background-color (:hover colors)}}}
+     [:td [:img {:src (str/join ["/media/logos/" (get imgs/logo-map (get info-map :lang))]) :width "40px" :height "40px"}]]
+     [:td {:style {:padding "12px 30px"
+                   :color text-color}} (get info-map :lang)]
+     [:td {:style {:padding "12px 30px"
+                   :font-weight "bold"
+                   :background-color (nth excel-colors color-index)}}  (get info-map :algo)]
+     [:td {:style {:padding "12px 30px"
+                   :color text-color}} (get info-map :lib)]
+     [:td {:style {:padding "12px 30px"}} [:a {:href (get info-map :doc)
+                                              :style {:color (:primary colors)}} "Doc"]]]))
 
 (defn choose-filter [how-to-generate-table]
   (case how-to-generate-table
@@ -194,71 +192,93 @@
    [:a {:href "https://github.com/codereport/hoogle-translate/blob/main/CONTRIBUTING.md"} [:label "file a PR"]]
    [:label "."]])
 
-(defn app-view []
-  [:div {:style {:search-text ""
-                 :text-align "center"
-                 :padding (@state :top-padding)}}
-   [:a {:href "https://www.youtube.com/c/codereport"
-        :style (styles/logo-link)}
-    [:img {:src "/media/code_report_circle.png"
-           :style (styles/logo-image)
-           :on-mouse-over (fn [e] 
-                           (-> e .-target .-style .-transform (set! "scale(1.25)")))
-           :on-mouse-out (fn [e] 
-                          (-> e .-target .-style .-transform (set! "scale(1)")))}]]
-   
-   [:label {:style {:color "darkviolet"
-                    :font-family "'JetBrains Mono', monospace"
-                    :font-size "50"
-                    :font-weight "bold"}} "Hoogle Translate"]
-   [:br]
-   [:label (@debug :info)]
-   [:br]
-   [:input
-    {:spellcheck "false"
-     :focus true ;; TODO fix
-     :style {:padding "12px 20px"
-             :margin "8px 0"
-             :width "600px"
-             :font-size "30" ; this is for the search box
-             :font-family "'JetBrains Mono', monospace"
-             :border-radius "25px"
-             :border "2px solid grey"
-             :outline-width "0"
-             :text-align "center"
-             :spellcheck "false"}
-    ;  :value (@state :search-text) ;; TODO get search text to update on clicks
-     :on-key-press
-     (fn [e]
-       (if (= (.-key e) "Enter")
-         (reset! state {:search-text (.. e -target -value)
-                        :top-padding "20px"
-                        :results-table (generate-table (if (and (str/includes? (.. e -target -value) " ")
-                                                                (not (str/includes? (.. e -target -value) "->")))
-                                                         ( ->> (str/replace (.. e -target -value) " " "@")
-                                                           (get data/by-key-map)
-                                                           (get-id))
-                                                         (.. e -target -value)) 
-                                                       (decide-how (.. e -target -value)))})
-         (.log js/console "Not Enter")))}]
-   ; ((reset! state {:search-text (str/join [(@state :search-text) (-.key e)])}))))}]
-   [:br]
-   [:br]
+(defn update-body-styles [theme]
+  (let [colors (get styles/theme-colors theme)
+        style-element (or (.getElementById js/document "theme-styles")
+                          (let [el (.createElement js/document "style")]
+                            (set! (.-id el) "theme-styles")
+                            (.appendChild (.-head js/document) el)
+                            el))]
+    (set! (.-innerHTML style-element) 
+          (str "body { background-color: " (:background colors) "; margin: 0; padding: 0; }"))))
 
-   (@state :results-table)
-   
-   ;; Only show attribution and social links when no results are showing (top-padding is 250px)
-   (when (= (@state :top-padding) "250px")
-     [:div
-      [:label (styles/font 25) "by code_report"]
-      [social-links]])
-      
-   ;; Only show footnotes when results are showing (top-padding is not 250px)
-   (when (not= (@state :top-padding) "250px")
-     [footnotes])
-   ])
+(defn theme-toggle []
+  [:button
+   {:style (styles/theme-toggle-style (@state :theme))
+    :on-click #(let [new-theme (if (= (@state :theme) :light) :dark :light)
+                     current-state @state
+                     top-padding (:top-padding current-state)]
+                 ;; If there are search results showing, regenerate the table
+                 (if (= top-padding "20px")
+                   (let [selection (some-> current-state :search-text)
+                         how-to-generate-table (decide-how selection)]
+                     (reset! state {:top-padding top-padding
+                                    :theme new-theme
+                                    :search-text selection
+                                    :results-table (generate-table selection how-to-generate-table)}))
+                   ;; Otherwise just update the theme
+                   (reset! state (assoc current-state :theme new-theme)))
+                 (update-body-styles new-theme))}
+   (if (= (@state :theme) :light) "🌙 Dark" "☀️ Light")])
+
+(defn app-view []
+  (let [current-theme (@state :theme)
+        colors (get styles/theme-colors current-theme)]
+    [:div {:style (styles/app-container-style current-theme (@state :top-padding))}
+     [theme-toggle]
+     [:a {:href "https://www.youtube.com/c/codereport"
+          :style (styles/logo-link)}
+      [:img {:src "/media/code_report_circle.png"
+             :style (styles/logo-image)
+             :on-mouse-over (fn [e] 
+                             (-> e .-target .-style .-transform (set! "scale(1.25)")))
+             :on-mouse-out (fn [e] 
+                            (-> e .-target .-style .-transform (set! "scale(1)")))}]]
+     
+     [:label {:style (styles/heading-style current-theme)} "Hoogle Translate"]
+     [:br]
+     [:label (@debug :info)]
+     [:br]
+     [:input
+      {:spellcheck "false"
+       :focus true
+       :style (styles/input-style current-theme)
+       :on-key-press
+       (fn [e]
+         (if (= (.-key e) "Enter")
+           (reset! state {:search-text (.. e -target -value)
+                          :top-padding "20px"
+                          :theme current-theme
+                          :results-table (generate-table (if (and (str/includes? (.. e -target -value) " ")
+                                                                  (not (str/includes? (.. e -target -value) "->")))
+                                                           (->> (str/replace (.. e -target -value) " " "@")
+                                                             (get data/by-key-map)
+                                                             (get-id))
+                                                           (.. e -target -value)) 
+                                                         (decide-how (.. e -target -value)))})
+           (.log js/console "Not Enter")))}]
+     [:br]
+     [:br]
+
+     (@state :results-table)
+     
+     ;; Only show attribution and social links when no results are showing
+     (when (= (@state :top-padding) "250px")
+       [:div
+        [:label (styles/font 25) "by code_report"]
+        [social-links]])
+        
+     ;; Only show footnotes when results are showing
+     (when (not= (@state :top-padding) "250px")
+       [footnotes])
+     ]))
+
+(defn init-theme []
+  (update-body-styles (@state :theme))
+  nil)
 
 (defn render! []
+  (init-theme)
   (rdom/render
    [app-view]
    (js/document.getElementById "app")))
