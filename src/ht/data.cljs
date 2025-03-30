@@ -16,7 +16,7 @@
 "D@reduce" {:lang "D" :algo "reduce" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/reduce.html" :sig "-"}
 "Elixir@reduce" {:lang "Elixir" :algo "reduce" :lib "Enum" :id 1 :doc "https://hexdocs.pm/elixir/Enum.html#reduce/2" :sig "-"}
 "Kotlin@reduce" {:lang "Kotlin" :algo "reduce" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/reduce.html" :sig "-"}
-"Python@reduce" {:lang "Python" :algo "reduce" :lib "itertools" :id 1 :doc "https://book.pythontips.com/en/latest/map_filter.html#reduce" :sig "-"}
+"Python@reduce" {:lang "Python" :algo "reduce" :lib "functools" :id 1 :doc "https://docs.python.org/3/library/functools.html#functools.reduce" :sig "-"}
 "Ruby@reduce" {:lang "Ruby" :algo "reduce" :lib "Enumerable" :id 1 :doc "https://apidock.com/ruby/Enumerable/reduce" :sig "-"}
 "APL@¨ (each)" {:lang "APL" :algo "¨ (each)" :lib "-" :id 2 :doc "http://microapl.com/apl_help/ch_020_020_900.htm" :sig "-"}
 "J@each" {:lang "J" :algo "each" :lib "-" :id 2 :doc "https://www.jsoftware.com/help/primer/each.htm" :sig "-"}
@@ -26,7 +26,7 @@
 "Elixir@map" {:lang "Elixir" :algo "map" :lib "Enum" :id 2 :doc "https://hexdocs.pm/elixir/Enum.html#map/2" :sig "-"}
 "Haskell@map" {:lang "Haskell" :algo "map" :lib "Data.List" :id 2 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:map" :sig "-"}
 "Kotlin@map" {:lang "Kotlin" :algo "map" :lib "collections" :id 2 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map.html" :sig "-"}
-"Python@map" {:lang "Python" :algo "map" :lib "builtin" :id 2 :doc "https://docs.python.org/3/library/functions.html#map" :sig "-"}
+"Python@map" {:lang "Python" :algo "map" :lib "-" :id 2 :doc "https://docs.python.org/3/library/functions.html#map" :sig "-"}
 "Racket@map" {:lang "Racket" :algo "map" :lib "base" :id 2 :doc "https://docs.racket-lang.org/reference/pairs.html?q=map#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._map%29%29" :sig "-"}
 "Ruby@map" {:lang "Ruby" :algo "map" :lib "Enumerable" :id 2 :doc "https://apidock.com/ruby/Enumerable/map" :sig "-"}
 "Rust@map" {:lang "Rust" :algo "map" :lib "trait.Iterator" :id 2 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map" :sig "-"}
@@ -58,6 +58,7 @@
 "Haskell@mapAdjacent" {:lang "Haskell" :algo "mapAdjacent" :lib "Data.List.HT" :id 5 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:mapAdjacent" :sig "-"}
 "q@prior" {:lang "q" :algo "prior" :lib "-" :id 5 :doc "https://code.kx.com/q/ref/prior/" :sig "-"}
 "Kotlin@zipWithNext" {:lang "Kotlin" :algo "zipWithNext" :lib "collections" :id 5 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/zip-with-next.html" :sig "-"}
+"Python@pairwise" {:lang "Python" :algo "pairwise" :lib "itertools" :id 5 :doc "https://docs.python.org/3/library/itertools.html#itertools.pairwise" :sig "-"}
 "APL@∘. (outer product)" {:lang "APL" :algo "∘. (outer product)" :lib "-" :id 6 :doc "http://microapl.com/apl_help/ch_020_020_890.htm" :sig "-"}
 "Haskell@outerProduct" {:lang "Haskell" :algo "outerProduct" :lib "Data.List.HT" :id 6 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:outerProduct" :sig "-"}
 "Clojure@outer-product" {:lang "Clojure" :algo "outer-product" :lib "core.matrix" :id 6 :doc "https://mikera.github.io/core.matrix/doc/clojure.core.matrix.html#var-outer-product" :sig "-"}
@@ -77,7 +78,7 @@
 "q@til" {:lang "q" :algo "til" :lib "-" :id 8 :doc "https://code.kx.com/q/ref/til/" :sig "-"}
 "Scala@until" {:lang "Scala" :algo "until" :lib "Range" :id 8 :doc "https://www.scala-lang.org/api/2.12.3/scala/collection/immutable/Range.html" :sig "-"}
 "D@enumerate" {:lang "D" :algo "enumerate" :lib "range" :id 9 :doc "https://dlang.org/library/std/range/enumerate.html" :sig "-"}
-"Python@enumerate" {:lang "Python" :algo "enumerate" :lib "-" :id 9 :doc "http://book.pythontips.com/en/latest/enumerate.html" :sig "-"}
+"Python@enumerate" {:lang "Python" :algo "enumerate" :lib "-" :id 9 :doc "https://docs.python.org/3/library/functions.html#enumerate" :sig "-"}
 "Racket@enumerate" {:lang "Racket" :algo "enumerate" :lib "list-utils" :id 9 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._enumerate%29%29" :sig "-"}
 "Rust@enumerate" {:lang "Rust" :algo "enumerate" :lib "trait.Iterator" :id 9 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.enumerate" :sig "-"}
 "Haskell@indexed" {:lang "Haskell" :algo "indexed" :lib "Data.List.Index" :id 9 :doc "https://hackage.haskell.org/package/ilist-0.4.0.0/docs/Data-List-Index.html#v:indexed" :sig "-"}
@@ -90,6 +91,7 @@
 "Scala@zipWithIndex" {:lang "Scala" :algo "zipWithIndex" :lib "various" :id 9 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#zipWithIndex:scala.collection.immutable.Vector[(A,Int)]" :sig "-"}
 "Haskell@partition" {:lang "Haskell" :algo "partition" :lib "Data.List" :id 10 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Data-List.html#v:partition" :sig "-"}
 "Kotlin@partition" {:lang "Kotlin" :algo "partition" :lib "collections" :id 10 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/partition.html" :sig "-"}
+"Python@partition" {:lang "Python" :algo "partition" :lib "more-itertools" :id 10 :doc "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.partition" :sig "-"}
 "Racket@partition" {:lang "Racket" :algo "partition" :lib "base" :id 10 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Flist..rkt%29._partition%29%29" :sig "-"}
 "Ruby@partition" {:lang "Ruby" :algo "partition" :lib "Enumerable" :id 10 :doc "https://apidock.com/ruby/Enumerable/partition" :sig "-"}
 "Rust@partition" {:lang "Rust" :algo "partition" :lib "trait.Iterator" :id 10 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.partition" :sig "-"}
@@ -126,21 +128,21 @@
 "Scala@contains" {:lang "Scala" :algo "contains" :lib "various" :id 17 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#contains[A1%3E:A](elem:A1):Boolean" :sig "-"}
 "Clojure@contains?" {:lang "Clojure" :algo "contains?" :lib "core" :id 17 :doc "https://clojuredocs.org/clojure.core/contains_q" :sig "-"}
 "Haskell@elem" {:lang "Haskell" :algo "elem" :lib "Prelude" :id 17 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:elem" :sig "-"}
-"Python@in" {:lang "Python" :algo "in" :lib "keyword" :id 17 :doc "https://www.programiz.com/python-programming/keyword-list#in" :sig "-"}
+"Python@in" {:lang "Python" :algo "in" :lib "-" :id 17 :doc "https://www.programiz.com/python-programming/keyword-list#in" :sig "-"}
 "Ruby@include?" {:lang "Ruby" :algo "include?" :lib "various" :id 17 :doc "https://apidock.com/ruby/Array/include%3F" :sig "-"}
 "Racket@member*" {:lang "Racket" :algo "member*" :lib "base" :id 17 :doc "https://docs.racket-lang.org/reference/pairs.html?q=map#%28def._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._member%29%29" :sig "-"}
 "Elixir@member?" {:lang "Elixir" :algo "member?" :lib "Enum" :id 17 :doc "https://hexdocs.pm/elixir/Enum.html#member?/2" :sig "-"}
 "APL@⍸ (where)" {:lang "APL" :algo "⍸ (where)" :lib "-" :id 18 :doc "https://help.dyalog.com/17.1/#Language/Primitive%20Functions/Where.htm#kanchor3608" :sig "-"}
 "q@where" {:lang "q" :algo "where" :lib "-" :id 18 :doc "https://code.kx.com/q4m3/A_Built-in_Functions/#a107-where" :sig "-"}
 "Haskell@count" {:lang "Haskell" :algo "count" :lib "Data.List.Unique" :id 19 :doc "https://hackage.haskell.org/package/Unique-0.4.7.7/docs/Data-List-Unique.html#v:count" :sig "-"}
-"Python@Counter*" {:lang "Python" :algo "Counter*" :lib "collections" :id 19 :doc "https://docs.python.org/2/library/collections.html#collections.Counter" :sig "-"}
+"Python@Counter*" {:lang "Python" :algo "Counter*" :lib "collections" :id 19 :doc "https://docs.python.org/3/library/collections.html#collections.Counter" :sig "-"}
 "Clojure@frequencies" {:lang "Clojure" :algo "frequencies" :lib "core" :id 19 :doc "https://clojuredocs.org/clojure.core/frequencies" :sig "-"}
 "Racket@frequencies" {:lang "Racket" :algo "frequencies" :lib "list-utils" :id 19 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._frequencies%29%29" :sig "-"}
 "pandas@value_counts" {:lang "pandas" :algo "value_counts" :lib "Series" :id 19 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html" :sig "-"}
 "D@any" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-"}
 "Haskell@any" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-"}
 "Kotlin@any" {:lang "Kotlin" :algo "any" :lib "collections" :id 20 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/any.html" :sig "-"}
-"Python@any" {:lang "Python" :algo "any" :lib "builtin" :id 20 :doc "https://docs.python.org/3/library/functions.html#any" :sig "-"}
+"Python@any" {:lang "Python" :algo "any" :lib "-" :id 20 :doc "https://docs.python.org/3/library/functions.html#any" :sig "-"}
 "Rust@any" {:lang "Rust" :algo "any" :lib "trait.Iterator" :id 20 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any" :sig "-"}
 "Elixir@any?" {:lang "Elixir" :algo "any?" :lib "Enum" :id 20 :doc "https://hexdocs.pm/elixir/Enum.html#any?/2" :sig "-"}
 "Ruby@any?" {:lang "Ruby" :algo "any?" :lib "Enumerable" :id 20 :doc "https://apidock.com/ruby/Enumerable/any%3F" :sig "-"}
@@ -159,9 +161,9 @@
 "Go@join" {:lang "Go" :algo "join" :lib "strings" :id 21 :doc "https://golang.org/pkg/strings/#Join" :sig "-"}
 "C#@join" {:lang "C#" :algo "join" :lib "String" :id 21 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.string.join?view=netframework-4.8" :sig "-"}
 "F#@join" {:lang "F#" :algo "join" :lib "String" :id 21 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.string.join?view=netframework-4.8" :sig "-"}
-"Python@join*" {:lang "Python" :algo "join*" :lib "String" :id 21 :doc "https://www.w3schools.com/python/ref_string_join.asp" :sig "-"}
+"Python@join*" {:lang "Python" :algo "join*" :lib "str" :id 21 :doc "https://docs.python.org/3/library/stdtypes.html#str.join" :sig "-"}
 "Kotlin@joinTo" {:lang "Kotlin" :algo "joinTo" :lib "collections" :id 21 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to.html" :sig "-"}
-"Python@zip(*)" {:lang "Python" :algo "zip(*)" :lib "-" :id 22 :doc "https://www.geeksforgeeks.org/transpose-matrix-single-line-python/" :sig "-"}
+"Python@zip(*)" {:lang "Python" :algo "zip(*)" :lib "-" :id 22 :doc "https://docs.python.org/3/library/functions.html#zip" :sig "-"}
 "pandas@transpose" {:lang "pandas" :algo "transpose" :lib "DataFrame" :id 22 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.transpose.html" :sig "-"}
 "Ruby@transpose" {:lang "Ruby" :algo "transpose" :lib "Array" :id 22 :doc "https://apidock.com/ruby/Array/transpose" :sig "-"}
 "APL@⍉ (transpose)" {:lang "APL" :algo "⍉ (transpose)" :lib "-" :id 22 :doc "http://microapl.com/apl_help/ch_020_020_540.htm" :sig "-"}
@@ -214,7 +216,7 @@
 "D@cartesianProduct" {:lang "D" :algo "cartesianProduct" :lib "std.algorithm.setops" :id 100 :doc "https://dlang.org/library/std/algorithm/setops/cartesian_product.html" :sig "-"}
 "D@dotProduct" {:lang "D" :algo "dotProduct" :lib "std.numeric" :id 7 :doc "https://dlang.org/library/std/numeric/dot_product.html" :sig "-"}
 "C++@cartesian_product" {:lang "C++" :algo "cartesian_product" :lib "range-v3" :id 100 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "-"}
-"Python@product" {:lang "Python" :algo "product" :lib "itertools" :id 100 :doc "" :sig "-"}
+"Python@product" {:lang "Python" :algo "product" :lib "itertools" :id 100 :doc "https://docs.python.org/3/library/itertools.html#itertools.product" :sig "-"}
 "q@cross" {:lang "q" :algo "cross" :lib "-" :id 100 :doc "https://code.kx.com/q4m3/A_Built-in_Functions/#a18-cross" :sig "-"}
 "J@. (Matrix Product)" {:lang "J" :algo ". (Matrix Product)" :lib "-" :id 7 :doc "https://code.jsoftware.com/wiki/Vocabulary/dot#dyadic" :sig "-"}
 "R@outer" {:lang "R" :algo "outer" :lib "-" :id 6 :doc "https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/outer" :sig "-"}
@@ -228,7 +230,7 @@
 "Rust@all" {:lang "Rust" :algo "all" :lib "iter" :id 31 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all" :sig "-"}
 "Scala@forall" {:lang "Scala" :algo "forall" :lib "various" :id 31 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all" :sig "-"}
 "Elixir@all?" {:lang "Elixir" :algo "all?" :lib "Enum" :id 31 :doc "https://hexdocs.pm/elixir/Enum.html#all?/2" :sig "-"}
-"Python@all" {:lang "Python" :algo "all" :lib "builtin" :id 31 :doc "https://docs.python.org/3/library/functions.html#all" :sig "-"}
+"Python@all" {:lang "Python" :algo "all" :lib "-" :id 31 :doc "https://docs.python.org/3/library/functions.html#all" :sig "-"}
 "Ruby@all" {:lang "Ruby" :algo "all" :lib "Enumerable" :id 31 :doc "https://apidock.com/ruby/Enumerable/all%3F" :sig "-"}
 "Java@allMatch" {:lang "Java" :algo "allMatch" :lib "Streams" :id 31 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" :sig "-"}
 "D@all" {:lang "D" :algo "all" :lib "std.algorithm" :id 31 :doc "https://dlang.org/library/std/algorithm/searching/all.all.html" :sig "-"}
@@ -240,7 +242,7 @@
 "Julia@all" {:lang "Julia" :algo "all" :lib "Base" :id 31 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.all-Tuple{AbstractArray,Any}" :sig "-"}
 "Haskell@++" {:lang "Haskell" :algo "++" :lib "Prelude" :id 42 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:-43--43-" :sig "-"}
 "Racket@append" {:lang "Racket" :algo "append" :lib "base" :id 42 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28quote._~23~25kernel%29._append%29%29" :sig "-"}
-"Python@+" {:lang "Python" :algo "+" :lib "List" :id 42 :doc "https://docs.python.org/3/tutorial/introduction.html#lists" :sig "-"}
+"Python@append" {:lang "Python" :algo "append" :lib "list" :id 42 :doc "https://docs.python.org/3/tutorial/introduction.html#lists" :sig "-"}
 "Clojure@concat" {:lang "Clojure" :algo "concat" :lib "List" :id 42 :doc "https://clojuredocs.org/clojure.core/concat" :sig "-"}
 "C++@join" {:lang "C++" :algo "join" :lib "Ranges" :id 42 :doc "https://en.cppreference.com/w/cpp/ranges" :sig "-"}
 "Swift@+" {:lang "Swift" :algo "+" :lib "Array" :id 42 :doc "https://developer.apple.com/documentation/swift/array/2963457" :sig "-"}
@@ -271,7 +273,7 @@
 "Elm@uniq" {:lang "Elm" :algo "uniq" :lib "List" :id 15 :doc "https://package.elm-lang.org/packages/mgold/elm-nonempty-list/latest/List-Nonempty#uniq" :sig "-"}
 "F#@distinct" {:lang "F#" :algo "distinct" :lib "Seq" :id 15 :doc "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#distinct" :sig "-"}
 "Pharo@removeDuplicates" {:lang "Pharo" :algo "removeDuplicates" :lib "OrderedCollection" :id 15 :doc "" :sig "-"}
-"BQN@  (scan) " {:lang "BQN" :algo "  (scan) " :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-"}
+"BQN@ ` (scan) " {:lang "BQN" :algo " ` (scan) " :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-"}
 "BQN@˝ (insert)" {:lang "BQN" :algo "˝ (insert)" :lib "-" :id 1 :doc "https://mlochbaum.github.io/BQN/help/insert.html" :sig "-"}
 "Kotlin@fold" {:lang "Kotlin" :algo "fold" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/fold.html" :sig "-"}
 "Kotlin@runningFold" {:lang "Kotlin" :algo "runningFold" :lib "collections" :id 4 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/running-fold.html" :sig "-"}
@@ -282,14 +284,16 @@
 "Pharo@inject:into:" {:lang "Pharo" :algo "inject:into:" :lib "Collection" :id 1 :doc "" :sig "-"}
 "Pharo@reduce:" {:lang "Pharo" :algo "reduce:" :lib "Collection" :id 1 :doc "" :sig "-"}
 "Pharo@fold:" {:lang "Pharo" :algo "fold:" :lib "Collection" :id 1 :doc "" :sig "-"}
-"BQN@´ (fold)" {:lang "BQN" :algo "´ (fold)" :lib "" :id 1 :doc "https://mlochbaum.github.io/BQN/help/fold.html" :sig "-"}
-"APL@⌿ (reduce first)" {:lang "APL" :algo "⌿ (reduce first)" :lib "" :id 1 :doc "https://microapl.com/apl_help/ch_020_020_810.htm" :sig "-"}
-"BQN@⌜ (table)" {:lang "BQN" :algo "⌜ (table)" :lib "" :id 6 :doc "https://mlochbaum.github.io/BQN/help/table.html" :sig "-"}
-"J@/ (table)" {:lang "J" :algo "/ (table)" :lib "" :id 6 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash#dyadic" :sig "-"}
+"BQN@´ (fold)" {:lang "BQN" :algo "´ (fold)" :lib "-" :id 1 :doc "https://mlochbaum.github.io/BQN/help/fold.html" :sig "-"}
+"APL@⌿ (reduce first)" {:lang "APL" :algo "⌿ (reduce first)" :lib "-" :id 1 :doc "https://microapl.com/apl_help/ch_020_020_810.htm" :sig "-"}
+"BQN@⌜ (table)" {:lang "BQN" :algo "⌜ (table)" :lib "-" :id 6 :doc "https://mlochbaum.github.io/BQN/help/table.html" :sig "-"}
+"J@/ (table)" {:lang "J" :algo "/ (table)" :lib "-" :id 6 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash#dyadic" :sig "-"}
 "Rust@counts" {:lang "Rust" :algo "counts" :lib "Itertools" :id 19 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.counts" :sig "-"}
 "C++@adjacent_transform" {:lang "C++" :algo "adjacent_transform" :lib "<ranges>" :id 5 :doc "https://en.cppreference.com/w/cpp/ranges/adjacent_transform_view" :sig "-"}
 "Gleam@map" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map" :sig "-"}
 "Gleam@range" {:lang "Gleam" :algo "range" :lib "list" :id 8 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#range" :sig "-"}
 "Gleam@map2" {:lang "Gleam" :algo "map2" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map2" :sig "-"}
 "Gleam@scan" {:lang "Gleam" :algo "scan" :lib "list" :id 4 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
+"Kap@⌻ (outer product)" {:lang "Kap" :algo "⌻ (outer product)" :lib "-" :id 6 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_outer_product" :sig "-"}
+"Uiua@⊞ (table)" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/tables" :sig "-"}
 })
