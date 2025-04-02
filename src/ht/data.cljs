@@ -109,6 +109,7 @@
 "F#@Distinct" {:lang "F#" :algo "Distinct" :lib "Seq" :id 15 :doc "https://www.dotnetperls.com/duplicates-fs" :sig "-"}
 "Kotlin@distinct" {:lang "Kotlin" :algo "distinct" :lib "collections" :id 15 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/distinct.html" :sig "-"}
 "Scala@distinct" {:lang "Scala" :algo "distinct" :lib "various" :id 15 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#distinct:Repr" :sig "-"}
+"Haskell@nub" {:lang "Haskell" :algo "nub" :lib "Data.List" :id 15 :doc "https://hackage.haskell.org/package/base-4.18.1.0/docs/Data-List.html#v:nub" :sig "-"}
 "Haskell@sortUniq" {:lang "Haskell" :algo "sortUniq" :lib "Data.List.Unique" :id 15 :doc "https://hackage.haskell.org/package/Unique-0.4.7.7/docs/Data-List-Unique.html#v:sortUniq" :sig "-"}
 "Elixir@uniq" {:lang "Elixir" :algo "uniq" :lib "Enum" :id 15 :doc "https://hexdocs.pm/elixir/Enum.html#uniq/1" :sig "-"}
 "Ruby@uniq" {:lang "Ruby" :algo "uniq" :lib "Array" :id 15 :doc "https://apidock.com/ruby/Array/uniq" :sig "-"}
