@@ -259,7 +259,7 @@
 "Clojure@apply = " {:lang "Clojure" :algo "apply = " :lib "" :id 51 :doc "" :sig "-"}
 "Racket@apply = " {:lang "Racket" :algo "apply = " :lib "" :id 51 :doc "" :sig "-"}
 "Haskell@allEqual" {:lang "Haskell" :algo "allEqual" :lib "Data.List.HT" :id 51 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:allEqual" :sig "-"}
-"Javascript@allEqual" {:lang "Javascript" :algo "allEqual" :lib "bbo" :id 51 :doc "https://tnfe.github.io/bbo/#allequal" :sig "-"}
+"JavaScript@allEqual" {:lang "JavaScript" :algo "allEqual" :lib "bbo" :id 51 :doc "https://tnfe.github.io/bbo/#allequal" :sig "-"}
 "C++@rotate" {:lang "C++" :algo "rotate" :lib "<algorithm>" :id 4104 :doc "https://en.cppreference.com/w/cpp/algorithm/rotate" :sig "-"}
 "APL@⌽ (rotate)" {:lang "APL" :algo "⌽ (rotate)" :lib "" :id 4104 :doc "https://microapl.com/apl_help/ch_020_020_520.htm" :sig "-"}
 "Ruby@rotate" {:lang "Ruby" :algo "rotate" :lib "Array" :id 4104 :doc "https://apidock.com/ruby/v2_5_5/Array/rotate" :sig "-"}
