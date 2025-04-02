@@ -109,6 +109,7 @@
 "F#@Distinct" {:lang "F#" :algo "Distinct" :lib "Seq" :id 15 :doc "https://www.dotnetperls.com/duplicates-fs" :sig "-"}
 "Kotlin@distinct" {:lang "Kotlin" :algo "distinct" :lib "collections" :id 15 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/distinct.html" :sig "-"}
 "Scala@distinct" {:lang "Scala" :algo "distinct" :lib "various" :id 15 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#distinct:Repr" :sig "-"}
+"Haskell@nub" {:lang "Haskell" :algo "nub" :lib "Data.List" :id 15 :doc "https://hackage.haskell.org/package/base-4.18.1.0/docs/Data-List.html#v:nub" :sig "-"}
 "Haskell@sortUniq" {:lang "Haskell" :algo "sortUniq" :lib "Data.List.Unique" :id 15 :doc "https://hackage.haskell.org/package/Unique-0.4.7.7/docs/Data-List-Unique.html#v:sortUniq" :sig "-"}
 "Elixir@uniq" {:lang "Elixir" :algo "uniq" :lib "Enum" :id 15 :doc "https://hexdocs.pm/elixir/Enum.html#uniq/1" :sig "-"}
 "Ruby@uniq" {:lang "Ruby" :algo "uniq" :lib "Array" :id 15 :doc "https://apidock.com/ruby/Array/uniq" :sig "-"}
@@ -259,7 +260,7 @@
 "Clojure@apply = " {:lang "Clojure" :algo "apply = " :lib "" :id 51 :doc "" :sig "-"}
 "Racket@apply = " {:lang "Racket" :algo "apply = " :lib "" :id 51 :doc "" :sig "-"}
 "Haskell@allEqual" {:lang "Haskell" :algo "allEqual" :lib "Data.List.HT" :id 51 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:allEqual" :sig "-"}
-"Javascript@allEqual" {:lang "Javascript" :algo "allEqual" :lib "bbo" :id 51 :doc "https://tnfe.github.io/bbo/#allequal" :sig "-"}
+"JavaScript@allEqual" {:lang "JavaScript" :algo "allEqual" :lib "bbo" :id 51 :doc "https://tnfe.github.io/bbo/#allequal" :sig "-"}
 "C++@rotate" {:lang "C++" :algo "rotate" :lib "<algorithm>" :id 4104 :doc "https://en.cppreference.com/w/cpp/algorithm/rotate" :sig "-"}
 "APL@⌽ (rotate)" {:lang "APL" :algo "⌽ (rotate)" :lib "" :id 4104 :doc "https://microapl.com/apl_help/ch_020_020_520.htm" :sig "-"}
 "Ruby@rotate" {:lang "Ruby" :algo "rotate" :lib "Array" :id 4104 :doc "https://apidock.com/ruby/v2_5_5/Array/rotate" :sig "-"}
@@ -296,4 +297,6 @@
 "Gleam@scan" {:lang "Gleam" :algo "scan" :lib "list" :id 4 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
 "Kap@⌻ (outer product)" {:lang "Kap" :algo "⌻ (outer product)" :lib "-" :id 6 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_outer_product" :sig "-"}
 "Uiua@⊞ (table)" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/tables" :sig "-"}
+"Common Lisp@reduce" {:lang "Common Lisp" :algo "reduce" :lib "-" :id 1 :doc "https://novaspec.org/cl/f_reduce" :sig "-"}
+"Common Lisp@map" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-"}
 })
