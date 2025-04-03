@@ -325,4 +325,7 @@
 "Mathematica@AppendTo" {:lang "Mathematica" :algo "AppendTo" :lib "-" :id 42 :doc "http://reference.wolfram.com/language/ref/AppendTo.html" :sig "-"}
 "Mathematica@RotateLeft" {:lang "Mathematica" :algo "RotateLeft" :lib "-" :id 4104 :doc "http://reference.wolfram.com/language/ref/RotateLeft.html" :sig "-"}
 "Mathematica@RotateRight" {:lang "Mathematica" :algo "RotateRight" :lib "-" :id 4104 :doc "http://reference.wolfram.com/language/ref/RotateRight.html" :sig "-"}
+"Common Lisp@every" {:lang "Common Lisp" :algo "every" :lib "-" :id 31 :doc "https://novaspec.org/cl/f_every" :sig "-"}
+"Common Lisp@remove-duplicates" {:lang "Common Lisp" :algo "remove-duplicates" :lib "-" :id 15 :doc "https://novaspec.org/cl/f_remove-duplicates" :sig "-"}
+"Common Lisp@apply" {:lang "Common Lisp" :algo "apply" :lib "-" :id 51 :doc "https://novaspec.org/cl/f_apply" :sig "-"}
 })
