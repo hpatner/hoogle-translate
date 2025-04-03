@@ -299,4 +299,30 @@
 "Uiua@⊞ (table)" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/tables" :sig "-"}
 "Common Lisp@reduce" {:lang "Common Lisp" :algo "reduce" :lib "-" :id 1 :doc "https://novaspec.org/cl/f_reduce" :sig "-"}
 "Common Lisp@map" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-"}
+"Mathematica@Fold" {:lang "Mathematica" :algo "Fold" :lib "-" :id 1 :doc "https://reference.wolfram.com/language/ref/Fold.html" :sig "-"}
+"Mathematica@/@ (Map)" {:lang "Mathematica" :algo "/@ (Map)" :lib "-" :id 2 :doc "http://reference.wolfram.com/language/ref/Map.html" :sig "-"}
+"Mathematica@Select" {:lang "Mathematica" :algo "Select" :lib "-" :id 3 :doc "http://reference.wolfram.com/language/ref/Select.html" :sig "-"}
+"Mathematica@FoldList" {:lang "Mathematica" :algo "FoldList" :lib "-" :id 4 :doc "http://reference.wolfram.com/language/ref/FoldList.html" :sig "-"}
+"Mathematica@Outer" {:lang "Mathematica" :algo "Outer" :lib "-" :id 6 :doc "http://reference.wolfram.com/language/ref/Outer.html" :sig "-"}
+"Mathematica@Inner" {:lang "Mathematica" :algo "Inner" :lib "-" :id 7 :doc "http://reference.wolfram.com/language/ref/Inner.html" :sig "-"}
+"Mathematica@Range" {:lang "Mathematica" :algo "Range" :lib "-" :id 8 :doc "http://reference.wolfram.com/language/ref/Range.html" :sig "-"}
+"Mathematica@Partition" {:lang "Mathematica" :algo "Partition" :lib "-" :id 11 :doc "http://reference.wolfram.com/language/ref/Partition.html" :sig "-"}
+"Mathematica@DeleteAdjacentDuplicates" {:lang "Mathematica" :algo "DeleteAdjacentDuplicates" :lib "-" :id 14 :doc "http://reference.wolfram.com/language/ref/DeleteAdjacentDuplicates.html" :sig "-"}
+"Mathematica@DeleteDuplicates" {:lang "Mathematica" :algo "DeleteDuplicates" :lib "-" :id 15 :doc "http://reference.wolfram.com/language/ref/DeleteDuplicates.html" :sig "-"}
+"Mathematica@ToString" {:lang "Mathematica" :algo "ToString" :lib "-" :id 16 :doc "http://reference.wolfram.com/language/ref/ToString.html" :sig "-"}
+"Mathematica@MemberQ" {:lang "Mathematica" :algo "MemberQ" :lib "-" :id 17 :doc "http://reference.wolfram.com/language/ref/MemberQ.html" :sig "-"}
+"Mathematica@Counts" {:lang "Mathematica" :algo "Counts" :lib "-" :id 19 :doc "http://reference.wolfram.com/language/ref/Counts.html" :sig "-"}
+"Mathematica@AnyTrue" {:lang "Mathematica" :algo "AnyTrue" :lib "-" :id 20 :doc "http://reference.wolfram.com/language/ref/AnyTrue.html" :sig "-"}
+"Mathematica@Join" {:lang "Mathematica" :algo "Join" :lib "-" :id 21 :doc "http://reference.wolfram.com/language/ref/Join.html" :sig "-"}
+"Mathematica@StringJoin" {:lang "Mathematica" :algo "StringJoin" :lib "-" :id 21 :doc "http://reference.wolfram.com/language/ref/StringJoin.html" :sig "-"}
+"Mathematica@Catenate" {:lang "Mathematica" :algo "Catenate" :lib "-" :id 21 :doc "http://reference.wolfram.com/language/ref/Catenate.html" :sig "-"}
+"Mathematica@Transpose" {:lang "Mathematica" :algo "Transpose" :lib "-" :id 22 :doc "http://reference.wolfram.com/language/ref/Transpose.html" :sig "-"}
+"Mathematica@SplitBy" {:lang "Mathematica" :algo "SplitBy" :lib "-" :id 23 :doc "http://reference.wolfram.com/language/ref/SplitBy.html" :sig "-"}
+"Mathematica@ConstantArray" {:lang "Mathematica" :algo "ConstantArray" :lib "-" :id 25 :doc "http://reference.wolfram.com/language/ref/ConstantArray.html" :sig "-"}
+"Mathematica@MapThread" {:lang "Mathematica" :algo "MapThread" :lib "-" :id 30 :doc "http://reference.wolfram.com/language/ref/MapThread.html" :sig "-"}
+"Mathematica@AllTrue" {:lang "Mathematica" :algo "AllTrue" :lib "-" :id 31 :doc "http://reference.wolfram.com/language/ref/AllTrue.html" :sig "-"}
+"Mathematica@Append" {:lang "Mathematica" :algo "Append" :lib "-" :id 42 :doc "http://reference.wolfram.com/language/ref/Append.html" :sig "-"}
+"Mathematica@AppendTo" {:lang "Mathematica" :algo "AppendTo" :lib "-" :id 42 :doc "http://reference.wolfram.com/language/ref/AppendTo.html" :sig "-"}
+"Mathematica@RotateLeft" {:lang "Mathematica" :algo "RotateLeft" :lib "-" :id 4104 :doc "http://reference.wolfram.com/language/ref/RotateLeft.html" :sig "-"}
+"Mathematica@RotateRight" {:lang "Mathematica" :algo "RotateRight" :lib "-" :id 4104 :doc "http://reference.wolfram.com/language/ref/RotateRight.html" :sig "-"}
 })
