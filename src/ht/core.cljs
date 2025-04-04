@@ -25,6 +25,11 @@
        (str/join)
        (str/lower-case)))
 
+(defn normalize-lang [lang]
+  (->> lang
+       (str/join)
+       (str/lower-case)))
+
 (defn extract-algo [s] ;; TODO this is confusingly named (returns a list)
   [(-> s
        (str/split #"@")
@@ -63,8 +68,8 @@
 ;; (keep (fn [[k {elem-id :id}]] (when (= id elemid) k)) m)
 
 (defn filter-by-lang [lang m]
-  (map last (filter (partial first-equals lang)
-                    (map vector (map get-lang (vals m)) (keys m)))))
+  (map last (filter (partial first-equals (normalize-lang lang))
+                    (map vector (map (comp normalize-lang get-lang) (vals m)) (keys m)))))
 
 (defn filter-by-sig [sig m]
   (map last (filter (partial first-equals sig)
