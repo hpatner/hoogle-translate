@@ -177,6 +177,7 @@
 "RAPIDS (Python)@transpose" {:lang "RAPIDS (Python)" :algo "transpose" :lib "DataFrame" :id 22 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.dataframe.DataFrame.transpose" :sig "-"}
 "APL@⊆ (partition)" {:lang "APL" :algo "⊆ (partition)" :lib "-" :id 23 :doc "http://microapl.com/apl_help/ch_020_020_590.htm" :sig "-"}
 "Haskell@groupBy" {:lang "Haskell" :algo "groupBy" :lib "Data.List.HT" :id 23 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:groupBy" :sig "-"}
+"Python@groupby" {:lang "Python" :algo "groupby" :lib "itertools" :id 23 :doc "https://docs.python.org/3/library/itertools.html#itertools.groupby" :sig "-"}
 "Clojure@partition-by" {:lang "Clojure" :algo "partition-by" :lib "core" :id 23 :doc "https://clojuredocs.org/clojure.core/partition-by" :sig "-"}
 "Ruby@chunk_while" {:lang "Ruby" :algo "chunk_while" :lib "Enumerable" :id 23 :doc "https://apidock.com/ruby/Enumerable/chunk_while" :sig "-"}
 "D@chunkBy" {:lang "D" :algo "chunkBy" :lib "algorith.iteration" :id 23 :doc "https://dlang.org/library/std/algorithm/iteration/chunk_by.html" :sig "-"}
