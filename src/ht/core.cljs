@@ -199,6 +199,14 @@
    [:a {:href "https://github.com/codereport/hoogle-translate/blob/main/CONTRIBUTING.md"} [:label "file a PR"]]
    [:label "."]])
 
+(defn save-theme-to-storage [theme]
+  (.setItem js/localStorage "ht-theme" (name theme)))
+
+(defn load-theme-from-storage []
+  (if-let [saved-theme (.getItem js/localStorage "ht-theme")]
+    (keyword saved-theme)
+    (:theme @state))) ; default to current state if no saved theme
+
 (defn update-body-styles [theme]
   (let [colors (get styles/theme-colors theme)
         style-element (or (.getElementById js/document "theme-styles")
@@ -215,6 +223,8 @@
     :on-click #(let [new-theme (if (= (@state :theme) :light) :dark :light)
                      current-state @state
                      top-padding (:top-padding current-state)]
+                 ;; Save theme to localStorage
+                 (save-theme-to-storage new-theme)
                  ;; If there are search results showing, regenerate the table
                  (if (= top-padding "20px")
                    (let [selection (or (:selection current-state) (:search-text current-state))
@@ -285,7 +295,11 @@
      ]))
 
 (defn init-theme []
-  (update-body-styles (@state :theme))
+  (let [saved-theme (load-theme-from-storage)]
+    ;; Update state with saved theme if available
+    (when (not= saved-theme (:theme @state))
+      (swap! state assoc :theme saved-theme))
+    (update-body-styles saved-theme))
   nil)
 
 (defn render! []
