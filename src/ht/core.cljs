@@ -15,6 +15,8 @@
 
 (defonce debug (r/atom {:info ""}))
 
+(defonce debounce-timer (r/atom nil))
+
 
 ; (defn extract-lang [s]
 ;   (first (str/split s #"@")))
@@ -242,6 +244,24 @@
                  (update-body-styles new-theme))}
    (if (= (@state :theme) :light) "🌙 Dark" "☀️ Light")])
 
+(defn perform-search [search-text current-theme]
+  (reset! state {:search-text search-text
+                 :top-padding "20px"
+                 :theme current-theme
+                 :results-table (generate-table (if (and (str/includes? search-text " ")
+                                                         (not (str/includes? search-text "->")))
+                                                  (->> (str/replace search-text " " "@")
+                                                       (get data/by-key-map)
+                                                       (get-id))
+                                                  search-text) 
+                                                (decide-how search-text))}))
+
+(defn debounced-search [search-text current-theme delay-ms]
+  (when @debounce-timer
+    (js/clearTimeout @debounce-timer))
+  (reset! debounce-timer 
+          (js/setTimeout #(perform-search search-text current-theme) delay-ms)))
+
 (defn app-view []
   (let [current-theme (@state :theme)
         colors (get styles/theme-colors current-theme)]
@@ -264,19 +284,15 @@
       {:spellcheck "false"
        :focus true
        :style (styles/input-style current-theme)
+       :on-change
+       (fn [e]
+         (let [value (.. e -target -value)]
+           (when (not= value "")
+             (debounced-search value current-theme 300))))
        :on-key-press
        (fn [e]
          (if (= (.-key e) "Enter")
-           (reset! state {:search-text (.. e -target -value)
-                          :top-padding "20px"
-                          :theme current-theme
-                          :results-table (generate-table (if (and (str/includes? (.. e -target -value) " ")
-                                                                  (not (str/includes? (.. e -target -value) "->")))
-                                                           (->> (str/replace (.. e -target -value) " " "@")
-                                                             (get data/by-key-map)
-                                                             (get-id))
-                                                           (.. e -target -value)) 
-                                                         (decide-how (.. e -target -value)))})
+           (perform-search (.. e -target -value) current-theme)
            (.log js/console "Not Enter")))}]
      [:br]
      [:br]
