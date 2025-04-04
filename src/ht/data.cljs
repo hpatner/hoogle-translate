@@ -329,4 +329,11 @@
 "Common Lisp@every" {:lang "Common Lisp" :algo "every" :lib "-" :id 31 :doc "https://novaspec.org/cl/f_every" :sig "-"}
 "Common Lisp@remove-duplicates" {:lang "Common Lisp" :algo "remove-duplicates" :lib "-" :id 15 :doc "https://novaspec.org/cl/f_remove-duplicates" :sig "-"}
 "Common Lisp@apply" {:lang "Common Lisp" :algo "apply" :lib "-" :id 51 :doc "https://novaspec.org/cl/f_apply" :sig "-"}
+"Haskell@intersperse" {:lang "Haskell" :algo "intersperse" :lib "Data.List" :id 12 :doc "https://hackage.haskell.org/package/base/docs/Data-List.html#v:intersperse" :sig "-"}
+"Rust@intersperse" {:lang "Rust" :algo "intersperse" :lib "itertools" :id 12 :doc "https://docs.rs/itertools/0.14.0/itertools/fn.intersperse.html" :sig "-"}
+"Gleam@intersperse" {:lang "Gleam" :algo "intersperse" :lib "list" :id 12 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#intersperse" :sig "-"}
+"Elixir@intersperse" {:lang "Elixir" :algo "intersperse" :lib "Enum" :id 12 :doc "https://hexdocs.pm/elixir/1.12/Enum.html#intersperse/2" :sig "-"}
+"Racket@intersperse" {:lang "Racket" :algo "intersperse" :lib "seq" :id 12 :doc "https://docs.racket-lang.org/seq/index.html#%28def._%28%28lib._seq%2Fmain..rkt%29._intersperse%29%29" :sig "-"}
+"Racket@add-between" {:lang "Racket" :algo "add-between" :lib "" :id 12 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Flist..rkt%29._add-between%29%29" :sig "-"}
+"Elm@intersperse" {:lang "Elm" :algo "intersperse" :lib "core" :id 12 :doc "https://package.elm-lang.org/packages/elm/core/latest/List#intersperse" :sig "-"}
 })
