@@ -2,6 +2,7 @@
 
 (def logo-map
   {"Ada"                  "ada.png"
+   "Agda"                 "agda.svg"
    "APL"                  "apl_logo.png"
    "Assembly"             "assembly_logo.png"
    "ASP.NET"              "asp.net.jpg"
