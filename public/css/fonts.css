@@ -4,3 +4,24 @@
   font-weight: normal;
   font-display: swap;
 } 
+
+@font-face {
+  font-family: 'APL387';
+  src: url('/fonts/APL387.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BQN386';
+  src: url('/fonts/BQN386.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uiua386';
+  src: url('/fonts/Uiua386.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+} 

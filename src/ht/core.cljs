@@ -84,10 +84,31 @@
 (def excel-colors ["#CC99FF" "#99CCFF" "#CCFFCC" ;"#CCFFFF"
                    "#FFFF99" "#FFCC99" "#FF99CC" "white"]) 
 
+(defn get-algorithm-font [lang]
+  (case lang
+    "APL" "'APL387', monospace"
+    "Kap" "'APL387', monospace"
+    "BQN" "'BQN386', monospace"
+    "Uiua" "'Uiua386', monospace"
+    "'JetBrains Mono', monospace"))
+
+(defn format-algorithm-with-fonts [algo-text lang]
+  (let [special-font (get-algorithm-font lang)
+        default-font "'JetBrains Mono', monospace"
+        parts (str/split algo-text #" " 2)] ; Split on first space only
+    (if (> (count parts) 1)
+      ;; If there are multiple parts, apply different fonts
+      [:span
+       [:span {:style {:font-family special-font}} (first parts)]
+       [:span {:style {:font-family default-font}} (str " " (second parts))]]
+      ;; Otherwise use the special font for the entire text
+      [:span {:style {:font-family special-font}} algo-text])))
+
 (defn generate-row [info-map color-index]
   (let [current-theme (@state :theme)
         colors (get styles/theme-colors current-theme)
-        text-color (:text colors)]
+        text-color (:text colors)
+        lang (get info-map :lang)]
     [:tr 
      {:on-click
       (fn [_] ((reset! state {:top-padding "20px"
@@ -116,7 +137,8 @@
       (get info-map :lang)]
      [:td {:style {:padding "12px 30px"
                    :font-weight "bold"
-                   :background-color (nth excel-colors color-index)}}  (get info-map :algo)]
+                   :background-color (nth excel-colors color-index)}} 
+      (format-algorithm-with-fonts (get info-map :algo) lang)]
      [:td {:style {:padding "12px 30px"
                    :color text-color}} (get info-map :lib)]
      [:td {:style {:padding "12px 30px"}} [:a {:href (get info-map :doc)
