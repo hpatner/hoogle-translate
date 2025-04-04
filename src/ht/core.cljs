@@ -26,7 +26,7 @@
        (str/lower-case)))
 
 (defn normalize-lang [lang]
-  ( ->> lang
+  (->> lang
        (str/join)
        (str/lower-case)))
 
@@ -69,7 +69,7 @@
 
 (defn filter-by-lang [lang m]
   (map last (filter (partial first-equals (normalize-lang lang))
-                    (map vector (map get-lang (vals m)) (keys m)))))
+                    (map vector (map (comp normalize-lang get-lang) (vals m)) (keys m)))))
 
 (defn filter-by-sig [sig m]
   (map last (filter (partial first-equals sig)
