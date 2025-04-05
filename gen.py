@@ -10,7 +10,7 @@ def parse_md_table(content):
     for line in lines:
         line = line.strip()
         # Skip header rows, separator rows, and empty lines
-        if not line or line.startswith("| :") or line.startswith("|    Language"):
+        if not line or line.startswith("| :") or line.startswith("|  Language"):
             continue
 
         if "J" in line:
@@ -57,8 +57,8 @@ def generate_clojure_map(data_rows):
         library = row["lib"]
         sig = row["sig"] if row["sig"] and row["sig"] != "TODO" else "-"
 
-        # Format according to the original file pattern without backticks
-        result += f'"{language}@{algo}" {{:lang "{language}" :algo "{algo}" :lib "{library}" :id {algo_id} :doc "{doc_link}" :sig "{sig}"}}\n'
+        # Format according to the new file pattern with Language@Algorithm@Library
+        result += f'"{language}@{algo}@{library}" {{:lang "{language}" :algo "{algo}" :lib "{library}" :id {algo_id} :doc "{doc_link}" :sig "{sig}"}}\n'
 
     result += "})\n"
     return result
