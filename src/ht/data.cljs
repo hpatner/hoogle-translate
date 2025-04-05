@@ -2,6 +2,7 @@
 
 (def by-key-map
   {
+"Language@Algorithm Name" {:lang "Language" :algo "Algorithm Name" :lib "Lib" :id AlgoId :doc "n" :sig "-"}
 "J@/ (insert)" {:lang "J" :algo "/ (insert)" :lib "-" :id 1 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash" :sig "-"}
 "APL@/ (reduce)" {:lang "APL" :algo "/ (reduce)" :lib "-" :id 1 :doc "http://microapl.com/apl_help/ch_020_020_800.htm" :sig "-"}
 "C++@accumulate" {:lang "C++" :algo "accumulate" :lib "<numeric>" :id 1 :doc "https://en.cppreference.com/w/cpp/algorithm/accumulate" :sig "-"}
@@ -49,9 +50,8 @@
 "F#@scan" {:lang "F#" :algo "scan" :lib "Seq" :id 4 :doc "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/sequences" :sig "-"}
 "Elixir@scan" {:lang "Elixir" :algo "scan" :lib "Enum" :id 4 :doc "https://hexdocs.pm/elixir/Enum.html#scan/2" :sig "-"}
 "Haskell@scanl1" {:lang "Haskell" :algo "scanl1" :lib "Data.List" :id 4 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:scanl1" :sig "-"}
-"RAPIDS (C++)@scan" {:lang "RAPIDS (C++)" :algo "scan" :lib "Series" :id 4 :doc "https://docs.rapids.ai/api/libcudf/stable/namespacecudf_1_1experimental.html#a3fb513cb9b4c26c11309b8b7c957724a" :sig "-"}
-"RAPIDS (Python)@cumsum" {:lang "RAPIDS (Python)" :algo "cumsum" :lib "Series" :id 4 :doc "https://docs.rapids.ai/api/cudf/nightly/api.html#cudf.core.series.Series.cumsum" :sig "-"}
-"pandas@cumsum" {:lang "pandas" :algo "cumsum" :lib "Series" :id 4 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.cumsum.html?highlight=cumsum#pandas.Series.cumsum" :sig "-"}
+"Python@cumsum" {:lang "Python" :algo "cumsum" :lib "RAPIDS cuDF" :id 4 :doc "https://docs.rapids.ai/api/cudf/nightly/api.html#cudf.core.series.Series.cumsum" :sig "-"}
+"Python@cumsum" {:lang "Python" :algo "cumsum" :lib "pandas" :id 4 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.cumsum.html?highlight=cumsum#pandas.Series.cumsum" :sig "-"}
 "APL@/ (n-wise reduce)" {:lang "APL" :algo "/ (n-wise reduce)" :lib "-" :id 5 :doc "http://microapl.com/apl_help/ch_020_020_800.htm" :sig "-"}
 "C++@adjacent_difference" {:lang "C++" :algo "adjacent_difference" :lib "<numeric>" :id 5 :doc "https://en.cppreference.com/w/cpp/algorithm/adjacent_difference" :sig "-"}
 "CUDA@adjacent_difference" {:lang "CUDA" :algo "adjacent_difference" :lib "Thrust" :id 5 :doc "https://thrust.github.io/doc/group__transformations_gaa41d309b53fa03bf13fe35a184148400.html" :sig "-"}
@@ -139,8 +139,8 @@
 "Python@Counter*" {:lang "Python" :algo "Counter*" :lib "collections" :id 19 :doc "https://docs.python.org/3/library/collections.html#collections.Counter" :sig "-"}
 "Clojure@frequencies" {:lang "Clojure" :algo "frequencies" :lib "core" :id 19 :doc "https://clojuredocs.org/clojure.core/frequencies" :sig "-"}
 "Racket@frequencies" {:lang "Racket" :algo "frequencies" :lib "list-utils" :id 19 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._frequencies%29%29" :sig "-"}
-"RAPIDS (Python)@value_counts" {:lang "RAPIDS (Python)" :algo "value_counts" :lib "[doc](https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.series.Series.value_counts)" :id `Series` :doc "" :sig "-"}
-"pandas@value_counts" {:lang "pandas" :algo "value_counts" :lib "Series" :id 19 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html" :sig "-"}
+"Python@value_counts" {:lang "Python" :algo "value_counts" :lib "[doc](https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.series.Series.value_counts)" :id `RAPID cuDF` :doc "" :sig "-"}
+"Python@value_counts" {:lang "Python" :algo "value_counts" :lib "pandas" :id 19 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html" :sig "-"}
 "D@any" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-"}
 "Haskell@any" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-"}
 "Kotlin@any" {:lang "Kotlin" :algo "any" :lib "collections" :id 20 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/any.html" :sig "-"}
@@ -166,7 +166,7 @@
 "Python@join*" {:lang "Python" :algo "join*" :lib "str" :id 21 :doc "https://docs.python.org/3/library/stdtypes.html#str.join" :sig "-"}
 "Kotlin@joinTo" {:lang "Kotlin" :algo "joinTo" :lib "collections" :id 21 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to.html" :sig "-"}
 "Python@zip(*)" {:lang "Python" :algo "zip(*)" :lib "-" :id 22 :doc "https://docs.python.org/3/library/functions.html#zip" :sig "-"}
-"pandas@transpose" {:lang "pandas" :algo "transpose" :lib "DataFrame" :id 22 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.transpose.html" :sig "-"}
+"Python@transpose" {:lang "Python" :algo "transpose" :lib "pandas" :id 22 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.transpose.html" :sig "-"}
 "Ruby@transpose" {:lang "Ruby" :algo "transpose" :lib "Array" :id 22 :doc "https://apidock.com/ruby/Array/transpose" :sig "-"}
 "APL@⍉ (transpose)" {:lang "APL" :algo "⍉ (transpose)" :lib "-" :id 22 :doc "http://microapl.com/apl_help/ch_020_020_540.htm" :sig "-"}
 "Haskell@transpose" {:lang "Haskell" :algo "transpose" :lib "Data.List" :id 22 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Data-List.html#v:transpose" :sig "-"}
@@ -175,7 +175,7 @@
 "Elixir@transpose" {:lang "Elixir" :algo "transpose" :lib "Matrix" :id 22 :doc "https://hexdocs.pm/matrix/Matrix.html#transpose/1" :sig "-"}
 "Scala@transpose" {:lang "Scala" :algo "transpose" :lib "various" :id 22 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#transpose" :sig "-"}
 "D@transposed" {:lang "D" :algo "transposed" :lib "range" :id 22 :doc "https://dlang.org/library/std/range/transposed.html" :sig "-"}
-"RAPIDS (Python)@transpose" {:lang "RAPIDS (Python)" :algo "transpose" :lib "DataFrame" :id 22 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.dataframe.DataFrame.transpose" :sig "-"}
+"Python@transpose" {:lang "Python" :algo "transpose" :lib "RAPIDS cuDF" :id 22 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.dataframe.DataFrame.transpose" :sig "-"}
 "APL@⊆ (partition)" {:lang "APL" :algo "⊆ (partition)" :lib "-" :id 23 :doc "http://microapl.com/apl_help/ch_020_020_590.htm" :sig "-"}
 "Haskell@groupBy" {:lang "Haskell" :algo "groupBy" :lib "Data.List.HT" :id 23 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:groupBy" :sig "-"}
 "Python@groupby" {:lang "Python" :algo "groupby" :lib "itertools" :id 23 :doc "https://docs.python.org/3/library/itertools.html#itertools.groupby" :sig "-"}
