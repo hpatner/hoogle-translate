@@ -99,7 +99,7 @@
     (if (> (count parts) 1)
       ;; If there are multiple parts, apply different fonts
       [:span
-       [:span {:style {:font-family special-font}} (first parts)]
+       [:span {:style {:font-family special-font :font-weight "normal"}} (first parts)]
        [:span {:style {:font-family default-font}} (str " " (second parts))]]
       ;; Otherwise use the special font for the entire text
       [:span {:style {:font-family special-font}} algo-text])))
@@ -139,8 +139,7 @@
                    :font-weight "bold"
                    :background-color (nth excel-colors color-index)}} 
       (format-algorithm-with-fonts (get info-map :algo) lang)]
-     [:td {:style {:padding "12px 30px"
-                   :color text-color}} (get info-map :lib)]
+     [:td {:style {:padding "12px 30px" :color text-color}} (get info-map :lib)]
      [:td {:style {:padding "12px 30px"}} [:a {:href (get info-map :doc)
                                               :style {:color (:primary colors)}} "Doc"]]]))
 
