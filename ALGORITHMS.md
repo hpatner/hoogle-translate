@@ -374,3 +374,4 @@
 |    Scala    |          `tabulate`          |   25   |        `various`        |                                 [doc](https://scala-lang.org/api/current/scala/Array$.html#tabulate-fffffde9)                                  |
 |    Scala    |        `appendedAll`         |   42   |        `various`        |                    [doc](https://scala-lang.org/api/current/scala/collection/immutable/IndexedSeqOps.html#appendedAll-1dd)                     |
 |    Scala    |             `++`             |   42   |        `various`        |                              [doc](https://scala-lang.org/api/current/scala/collection/ArrayOps.html#++-fffff738)                              |
+|   Python    |           `outer`            |   6    |         `Numpy`         |                                    [doc](https://numpy.org/doc/stable/reference/generated/numpy.outer.html)                                    |
