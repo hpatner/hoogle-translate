@@ -56,6 +56,7 @@ def find_logo(language):
         "JavaScript": ["javascript", "js"],
         "TypeScript": ["typescript", "ts"],
         "pandas": ["pandas", "python_pandas"],
+        "q": ["kx-logo"],
     }
 
     # Special debug for C++
