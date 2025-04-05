@@ -336,4 +336,26 @@
 "Racket@intersperse" {:lang "Racket" :algo "intersperse" :lib "seq" :id 12 :doc "https://docs.racket-lang.org/seq/index.html#%28def._%28%28lib._seq%2Fmain..rkt%29._intersperse%29%29" :sig "-"}
 "Racket@add-between" {:lang "Racket" :algo "add-between" :lib "" :id 12 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Flist..rkt%29._add-between%29%29" :sig "-"}
 "Elm@intersperse" {:lang "Elm" :algo "intersperse" :lib "core" :id 12 :doc "https://package.elm-lang.org/packages/elm/core/latest/List#intersperse" :sig "-"}
+"Agda@foldl" {:lang "Agda" :algo "foldl" :lib "various" :id 1 :doc "https://agda.github.io/agda-stdlib/v2.2/Effect.Foldable.html#1843" :sig "-"}
+"Agda@map" {:lang "Agda" :algo "map" :lib "various" :id 2 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1634" :sig "-"}
+"Agda@filter" {:lang "Agda" :algo "filter" :lib "various" :id 3 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#10687" :sig "-"}
+"Agda@scanl" {:lang "Agda" :algo "scanl" :lib "various" :id 4 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Scans.Base.html#1105" :sig "-"}
+"Agda@cartesianProductWith" {:lang "Agda" :algo "cartesianProductWith" :lib "Data.List" :id 6 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2132" :sig "-"}
+"Agda@cartesianProduct" {:lang "Agda" :algo "cartesianProduct" :lib "Data.List" :id 100 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2317" :sig "-"}
+"Agda@upTo" {:lang "Agda" :algo "upTo" :lib "Data.List" :id 8 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#6689" :sig "-"}
+"Agda@allFin" {:lang "Agda" :algo "allFin" :lib "Data.Vec" :id 8 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.Vec.Base.html#6708" :sig "-"}
+"Agda@partitionᵇ" {:lang "Agda" :algo "partitionᵇ" :lib "Data.List" :id 10 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#11170" :sig "-"}
+"Agda@intersperse" {:lang "Agda" :algo "intersperse" :lib "Data.List" :id 12 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1819" :sig "-"}
+"Agda@group" {:lang "Agda" :algo "group" :lib "Data.Vec" :id 13 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.Vec.Base.html#7275" :sig "-"}
+"Agda@deduplicate" {:lang "Agda" :algo "deduplicate" :lib "Data.List" :id 15 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#13320" :sig "-"}
+"Agda@show" {:lang "Agda" :algo "show" :lib "various" :id 16 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.Bool.Show.html#412" :sig "-"}
+"Agda@_∈_" {:lang "Agda" :algo "_∈_" :lib "Data.List" :id 17 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Membership.Setoid.html#925" :sig "-"}
+"Agda@any" {:lang "Agda" :algo "any" :lib "various" :id 20 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#4857" :sig "-"}
+"Agda@concat" {:lang "Agda" :algo "concat" :lib "various" :id 21 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#4350" :sig "-"}
+"Agda@transpose" {:lang "Agda" :algo "transpose" :lib "various" :id 22 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.Vec.Base.html#9519" :sig "-"}
+"Agda@repeat" {:lang "Agda" :algo "repeat" :lib "Codata.Guarded.Stream" :id 24 :doc "https://agda.github.io/agda-stdlib/v2.2/Codata.Guarded.Stream.html#1216" :sig "-"}
+"Agda@replicate" {:lang "Agda" :algo "replicate" :lib "various" :id 25 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#5319" :sig "-"}
+"Agda@zipWith" {:lang "Agda" :algo "zipWith" :lib "various" :id 30 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2734" :sig "-"}
+"Agda@all" {:lang "Agda" :algo "all" :lib "various" :id 31 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#4910" :sig "-"}
+"Agda@_++_" {:lang "Agda" :algo "_++_" :lib "various" :id 42 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1734" :sig "-"}
 })
