@@ -373,4 +373,5 @@
 "Scala@tabulate@various" {:lang "Scala" :algo "tabulate" :lib "various" :id 25 :doc "https://scala-lang.org/api/current/scala/Array$.html#tabulate-fffffde9" :sig "-"}
 "Scala@appendedAll@various" {:lang "Scala" :algo "appendedAll" :lib "various" :id 42 :doc "https://scala-lang.org/api/current/scala/collection/immutable/IndexedSeqOps.html#appendedAll-1dd" :sig "-"}
 "Scala@++@various" {:lang "Scala" :algo "++" :lib "various" :id 42 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#++-fffff738" :sig "-"}
+"Python@outer@Numpy" {:lang "Python" :algo "outer" :lib "Numpy" :id 6 :doc "https://numpy.org/doc/stable/reference/generated/numpy.outer.html" :sig "-"}
 })
