@@ -30,7 +30,7 @@
 "Racket@map@base" {:lang "Racket" :algo "map" :lib "base" :id 2 :doc "https://docs.racket-lang.org/reference/pairs.html?q=map#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._map%29%29" :sig "-"}
 "Ruby@map@Enumerable" {:lang "Ruby" :algo "map" :lib "Enumerable" :id 2 :doc "https://apidock.com/ruby/Enumerable/map" :sig "-"}
 "Rust@map@trait.Iterator" {:lang "Rust" :algo "map" :lib "trait.Iterator" :id 2 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map" :sig "-"}
-"Scala@map@various" {:lang "Scala" :algo "map" :lib "various" :id 2 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#map[B](f:A=%3EB):scala.collection.immutable.Vector[B]" :sig "-"}
+"Scala@map@various" {:lang "Scala" :algo "map" :lib "various" :id 2 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#map-5d3" :sig "-"}
 "C++@transform@<algorithm>" {:lang "C++" :algo "transform" :lib "<algorithm>" :id 2 :doc "https://en.cppreference.com/w/cpp/algorithm/transform" :sig "-"}
 "APL@/ (compress)@-" {:lang "APL" :algo "/ (compress)" :lib "-" :id 3 :doc "http://microapl.com/apl_help/ch_020_020_840.htm" :sig "-"}
 "Haskell@filter@Data.List" {:lang "Haskell" :algo "filter" :lib "Data.List" :id 3 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:filter" :sig "-"}
@@ -44,7 +44,7 @@
 "Clojure@reductions@core" {:lang "Clojure" :algo "reductions" :lib "core" :id 4 :doc "https://clojuredocs.org/clojure.core/reductions" :sig "-"}
 "q@scan@-" {:lang "q" :algo "scan" :lib "-" :id 4 :doc "https://code.kx.com/q/ref/over/" :sig "-"}
 "Rust@scan@trait.Iterator" {:lang "Rust" :algo "scan" :lib "trait.Iterator" :id 4 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.scan" :sig "-"}
-"Scala@scan@various" {:lang "Scala" :algo "scan" :lib "various" :id 4 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#scan[B%3E:A,That](z:B)(op:(B,B)=%3EB)(implicitcbf:scala.collection.generic.CanBuildFrom[Repr,B,That]):That" :sig "-"}
+"Scala@scan@various" {:lang "Scala" :algo "scan" :lib "various" :id 4 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#scan-fffff9e1" :sig "-"}
 "Kotlin@runningReduce@collections" {:lang "Kotlin" :algo "runningReduce" :lib "collections" :id 4 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/running-reduce.html" :sig "-"}
 "F#@scan@Seq" {:lang "F#" :algo "scan" :lib "Seq" :id 4 :doc "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/sequences" :sig "-"}
 "Elixir@scan@Enum" {:lang "Elixir" :algo "scan" :lib "Enum" :id 4 :doc "https://hexdocs.pm/elixir/Enum.html#scan/2" :sig "-"}
@@ -75,7 +75,7 @@
 "Racket@range@base" {:lang "Racket" :algo "range" :lib "base" :id 8 :doc "https://docs.racket-lang.org/reference/pairs.html?q=enumerate#%28def._%28%28lib._racket%2Flist..rkt%29._range%29%29" :sig "-"}
 "CUDA@sequence@Thrust" {:lang "CUDA" :algo "sequence" :lib "Thrust" :id 8 :doc "https://thrust.github.io/doc/group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html" :sig "-"}
 "q@til@-" {:lang "q" :algo "til" :lib "-" :id 8 :doc "https://code.kx.com/q/ref/til/" :sig "-"}
-"Scala@until@Range" {:lang "Scala" :algo "until" :lib "Range" :id 8 :doc "https://www.scala-lang.org/api/2.12.3/scala/collection/immutable/Range.html" :sig "-"}
+"Scala@until@Range" {:lang "Scala" :algo "until" :lib "Range" :id 8 :doc "https://scala-lang.org/api/current/scala/collection/immutable/Range.html" :sig "-"}
 "D@enumerate@range" {:lang "D" :algo "enumerate" :lib "range" :id 9 :doc "https://dlang.org/library/std/range/enumerate.html" :sig "-"}
 "Python@enumerate@-" {:lang "Python" :algo "enumerate" :lib "-" :id 9 :doc "https://docs.python.org/3/library/functions.html#enumerate" :sig "-"}
 "Racket@enumerate@list-utils" {:lang "Racket" :algo "enumerate" :lib "list-utils" :id 9 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._enumerate%29%29" :sig "-"}
@@ -87,7 +87,7 @@
 "Elixir@with_index@Enum" {:lang "Elixir" :algo "with_index" :lib "Enum" :id 9 :doc "https://hexdocs.pm/elixir/Enum.html#with_index/2" :sig "-"}
 "Ruby@with_index@Enumerable" {:lang "Ruby" :algo "with_index" :lib "Enumerable" :id 9 :doc "https://apidock.com/ruby/Enumerator/with_index" :sig "-"}
 "Kotlin@withIndex@collections" {:lang "Kotlin" :algo "withIndex" :lib "collections" :id 9 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/with-index.html" :sig "-"}
-"Scala@zipWithIndex@various" {:lang "Scala" :algo "zipWithIndex" :lib "various" :id 9 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#zipWithIndex:scala.collection.immutable.Vector[(A,Int)]" :sig "-"}
+"Scala@zipWithIndex@various" {:lang "Scala" :algo "zipWithIndex" :lib "various" :id 9 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#zipWithIndex-0" :sig "-"}
 "Haskell@partition@Data.List" {:lang "Haskell" :algo "partition" :lib "Data.List" :id 10 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Data-List.html#v:partition" :sig "-"}
 "Kotlin@partition@collections" {:lang "Kotlin" :algo "partition" :lib "collections" :id 10 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/partition.html" :sig "-"}
 "Python@partition@more-itertools" {:lang "Python" :algo "partition" :lib "more-itertools" :id 10 :doc "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.partition" :sig "-"}
@@ -107,7 +107,7 @@
 "Clojure@distinct@core" {:lang "Clojure" :algo "distinct" :lib "core" :id 15 :doc "https://clojuredocs.org/clojure.core/distinct" :sig "-"}
 "F#@Distinct@Seq" {:lang "F#" :algo "Distinct" :lib "Seq" :id 15 :doc "https://www.dotnetperls.com/duplicates-fs" :sig "-"}
 "Kotlin@distinct@collections" {:lang "Kotlin" :algo "distinct" :lib "collections" :id 15 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/distinct.html" :sig "-"}
-"Scala@distinct@various" {:lang "Scala" :algo "distinct" :lib "various" :id 15 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#distinct:Repr" :sig "-"}
+"Scala@distinct@various" {:lang "Scala" :algo "distinct" :lib "various" :id 15 :doc "https://scala-lang.org/api/current/scala/collection/SeqOps.html#distinct-0" :sig "-"}
 "Haskell@nub@Data.List" {:lang "Haskell" :algo "nub" :lib "Data.List" :id 15 :doc "https://hackage.haskell.org/package/base-4.18.1.0/docs/Data-List.html#v:nub" :sig "-"}
 "Haskell@sortUniq@Data.List.Unique" {:lang "Haskell" :algo "sortUniq" :lib "Data.List.Unique" :id 15 :doc "https://hackage.haskell.org/package/Unique-0.4.7.7/docs/Data-List-Unique.html#v:sortUniq" :sig "-"}
 "Elixir@uniq@Enum" {:lang "Elixir" :algo "uniq" :lib "Enum" :id 15 :doc "https://hexdocs.pm/elixir/Enum.html#uniq/1" :sig "-"}
@@ -122,10 +122,10 @@
 "C++@to_string@<string>" {:lang "C++" :algo "to_string" :lib "<string>" :id 16 :doc "https://en.cppreference.com/w/cpp/string/basic_string/to_string" :sig "-"}
 "Elixir@to_string@various" {:lang "Elixir" :algo "to_string" :lib "various" :id 16 :doc "https://hexdocs.pm/elixir/Integer.html#to_string/1" :sig "-"}
 "Rust@to_string@string" {:lang "Rust" :algo "to_string" :lib "string" :id 16 :doc "https://doc.rust-lang.org/std/string/trait.ToString.html" :sig "-"}
-"Scala@toString@various" {:lang "Scala" :algo "toString" :lib "various" :id 16 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#toString():String" :sig "-"}
+"Scala@toString@various" {:lang "Scala" :algo "toString" :lib "various" :id 16 :doc "https://scala-lang.org/api/current/scala/reflect/AnyValManifest.html#toString-0" :sig "-"}
 "D@canFind@algorithm.searching" {:lang "D" :algo "canFind" :lib "algorithm.searching" :id 17 :doc "https://dlang.org/library/std/algorithm/searching/can_find.can_find.html" :sig "-"}
 "Kotlin@contains@collections" {:lang "Kotlin" :algo "contains" :lib "collections" :id 17 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/contains.html" :sig "-"}
-"Scala@contains@various" {:lang "Scala" :algo "contains" :lib "various" :id 17 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#contains[A1%3E:A](elem:A1):Boolean" :sig "-"}
+"Scala@contains@various" {:lang "Scala" :algo "contains" :lib "various" :id 17 :doc "https://scala-lang.org/api/current/scala/collection/Iterator.html#contains-4ad" :sig "-"}
 "Clojure@contains?@core" {:lang "Clojure" :algo "contains?" :lib "core" :id 17 :doc "https://clojuredocs.org/clojure.core/contains_q" :sig "-"}
 "Haskell@elem@Prelude" {:lang "Haskell" :algo "elem" :lib "Prelude" :id 17 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:elem" :sig "-"}
 "Python@in@-" {:lang "Python" :algo "in" :lib "-" :id 17 :doc "https://www.programiz.com/python-programming/keyword-list#in" :sig "-"}
@@ -138,7 +138,7 @@
 "Python@Counter*@collections" {:lang "Python" :algo "Counter*" :lib "collections" :id 19 :doc "https://docs.python.org/3/library/collections.html#collections.Counter" :sig "-"}
 "Clojure@frequencies@core" {:lang "Clojure" :algo "frequencies" :lib "core" :id 19 :doc "https://clojuredocs.org/clojure.core/frequencies" :sig "-"}
 "Racket@frequencies@list-utils" {:lang "Racket" :algo "frequencies" :lib "list-utils" :id 19 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._frequencies%29%29" :sig "-"}
-"Python@value_counts@cuDF" {:lang "Python" :algo "value_counts" :lib "cuDF" :id 19 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.series.Series.value_counts" :sig "-"}
+"Python@value_counts@RAPIDS cuDF" {:lang "Python" :algo "value_counts" :lib "RAPIDS cuDF" :id 19 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.series.Series.value_counts" :sig "-"}
 "Python@value_counts@pandas" {:lang "Python" :algo "value_counts" :lib "pandas" :id 19 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html" :sig "-"}
 "D@any@algorithm.searching" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-"}
 "Haskell@any@Prelude" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-"}
@@ -149,7 +149,7 @@
 "Ruby@any?@Enumerable" {:lang "Ruby" :algo "any?" :lib "Enumerable" :id 20 :doc "https://apidock.com/ruby/Enumerable/any%3F" :sig "-"}
 "C++@any_of@<algorithm>" {:lang "C++" :algo "any_of" :lib "<algorithm>" :id 20 :doc "https://en.cppreference.com/w/cpp/algorithm/all_any_none_of" :sig "-"}
 "F#@exists@List" {:lang "F#" :algo "exists" :lib "List" :id 20 :doc "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists" :sig "-"}
-"Scala@exists@various" {:lang "Scala" :algo "exists" :lib "various" :id 20 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html" :sig "-"}
+"Scala@exists@various" {:lang "Scala" :algo "exists" :lib "various" :id 20 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#exists-fffff66f" :sig "-"}
 "Racket@memf*@base" {:lang "Racket" :algo "memf*" :lib "base" :id 20 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._memf%29%29" :sig "-"}
 "Clojure@some@core" {:lang "Clojure" :algo "some" :lib "core" :id 20 :doc "https://clojuredocs.org/clojure.core/some" :sig "-"}
 "APL@, (catenate)@-" {:lang "APL" :algo ", (catenate)" :lib "-" :id 21 :doc "http://microapl.com/apl_help/ch_020_020_490.htm" :sig "-"}
@@ -172,7 +172,7 @@
 "q@flip@- " {:lang "q" :algo "flip" :lib "- " :id 22 :doc "https://code.kx.com/v2/ref/flip/" :sig "-"}
 "Clojure@transpose@core.matrix" {:lang "Clojure" :algo "transpose" :lib "core.matrix" :id 22 :doc "https://mikera.github.io/core.matrix/doc/clojure.core.matrix.html#var-transpose" :sig "-"}
 "Elixir@transpose@Matrix" {:lang "Elixir" :algo "transpose" :lib "Matrix" :id 22 :doc "https://hexdocs.pm/matrix/Matrix.html#transpose/1" :sig "-"}
-"Scala@transpose@various" {:lang "Scala" :algo "transpose" :lib "various" :id 22 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#transpose" :sig "-"}
+"Scala@transpose@various" {:lang "Scala" :algo "transpose" :lib "various" :id 22 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#transpose-fffff875" :sig "-"}
 "D@transposed@range" {:lang "D" :algo "transposed" :lib "range" :id 22 :doc "https://dlang.org/library/std/range/transposed.html" :sig "-"}
 "Python@transpose@RAPIDS cuDF" {:lang "Python" :algo "transpose" :lib "RAPIDS cuDF" :id 22 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.dataframe.DataFrame.transpose" :sig "-"}
 "APL@⊆ (partition)@-" {:lang "APL" :algo "⊆ (partition)" :lib "-" :id 23 :doc "http://microapl.com/apl_help/ch_020_020_590.htm" :sig "-"}
@@ -212,7 +212,7 @@
 "Ruby@filter@Array" {:lang "Ruby" :algo "filter" :lib "Array" :id 3 :doc "https://apidock.com/ruby/Array/filter" :sig "-"}
 "Python@filter@-" {:lang "Python" :algo "filter" :lib "-" :id 3 :doc "https://docs.python.org/3/library/functions.html#filter" :sig "-"}
 "Kotlin@filter@collections" {:lang "Kotlin" :algo "filter" :lib "collections" :id 3 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html" :sig "-"}
-"Scala@filter@various" {:lang "Scala" :algo "filter" :lib "various" :id 3 :doc "https://www.scala-lang.org/api/2.12.4/scala/collection/immutable/Vector.html#filter(p:A=%3EBoolean):Repr" :sig "-"}
+"Scala@filter@various" {:lang "Scala" :algo "filter" :lib "various" :id 3 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#filter-c24" :sig "-"}
 "Rust@filter@iter" {:lang "Rust" :algo "filter" :lib "iter" :id 3 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.filter" :sig "-"}
 "Elixir@filter@Enum" {:lang "Elixir" :algo "filter" :lib "Enum" :id 3 :doc "https://hexdocs.pm/elixir/Enum.html#filter/2" :sig "-"}
 "D@cartesianProduct@std.algorithm.setops" {:lang "D" :algo "cartesianProduct" :lib "std.algorithm.setops" :id 100 :doc "https://dlang.org/library/std/algorithm/setops/cartesian_product.html" :sig "-"}
@@ -230,7 +230,7 @@
 "Clojure@every?@core" {:lang "Clojure" :algo "every?" :lib "core" :id 31 :doc "https://clojuredocs.org/clojure.core/every_q" :sig "-"}
 "Kotlin@all@sequences" {:lang "Kotlin" :algo "all" :lib "sequences" :id 31 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/all.html" :sig "-"}
 "Rust@all@iter" {:lang "Rust" :algo "all" :lib "iter" :id 31 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all" :sig "-"}
-"Scala@forall@various" {:lang "Scala" :algo "forall" :lib "various" :id 31 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all" :sig "-"}
+"Scala@forall@various" {:lang "Scala" :algo "forall" :lib "various" :id 31 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#forall-fffff66f" :sig "-"}
 "Elixir@all?@Enum" {:lang "Elixir" :algo "all?" :lib "Enum" :id 31 :doc "https://hexdocs.pm/elixir/Enum.html#all?/2" :sig "-"}
 "Python@all@-" {:lang "Python" :algo "all" :lib "-" :id 31 :doc "https://docs.python.org/3/library/functions.html#all" :sig "-"}
 "Ruby@all@Enumerable" {:lang "Ruby" :algo "all" :lib "Enumerable" :id 31 :doc "https://apidock.com/ruby/Enumerable/all%3F" :sig "-"}
@@ -280,8 +280,8 @@
 "Kotlin@fold@collections" {:lang "Kotlin" :algo "fold" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/fold.html" :sig "-"}
 "Kotlin@runningFold@collections" {:lang "Kotlin" :algo "runningFold" :lib "collections" :id 4 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/running-fold.html" :sig "-"}
 "D@fold@algorithm.iteration" {:lang "D" :algo "fold" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/fold.html" :sig "-"}
-"Scala@fold@various" {:lang "Scala" :algo "fold" :lib "various" :id 1 :doc "https://www.scala-lang.org/api/2.12.8/scala/collection/immutable/Vector.html#fold[A1%3E:A](z:A1)(op:(A1,A1)=%3EA1):A1" :sig "-"}
-"Scala@reduce@various" {:lang "Scala" :algo "reduce" :lib "various" :id 1 :doc "https://www.scala-lang.org/api/2.12.8/scala/collection/immutable/Vector.html#reduce[A1%3E:A](op:(A1,A1)=%3EA1):A1" :sig "-"}
+"Scala@fold@various" {:lang "Scala" :algo "fold" :lib "various" :id 1 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#fold-fffff9e1" :sig "-"}
+"Scala@reduce@various" {:lang "Scala" :algo "reduce" :lib "various" :id 1 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#reduce-fffff3d4" :sig "-"}
 "Ruby@inject@Enumerable" {:lang "Ruby" :algo "inject" :lib "Enumerable" :id 1 :doc "https://apidock.com/ruby/Enumerable/inject" :sig "-"}
 "Pharo@inject:into:@Collection" {:lang "Pharo" :algo "inject:into:" :lib "Collection" :id 1 :doc "" :sig "-"}
 "Pharo@reduce:@Collection" {:lang "Pharo" :algo "reduce:" :lib "Collection" :id 1 :doc "" :sig "-"}
@@ -364,4 +364,13 @@
 "J@I. (indices)@-" {:lang "J" :algo "I. (indices)" :lib "-" :id 18 :doc "https://code.jsoftware.com/wiki/Vocabulary/icapdot" :sig "-"}
 "Python@where@NumPy" {:lang "Python" :algo "where" :lib "NumPy" :id 18 :doc "https://numpy.org/doc/stable/reference/generated/numpy.where.html" :sig "-"}
 "BQN@⍷ (deduplicate)@-" {:lang "BQN" :algo "⍷ (deduplicate)" :lib "-" :id 15 :doc "https://mlochbaum.github.io/BQN/doc/selfcmp.html#deduplicate" :sig "-"}
+"Scala@sliding(2)@various" {:lang "Scala" :algo "sliding(2)" :lib "various" :id 5 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#sliding-fffffbef" :sig "-"}
+"Scala@partition@various" {:lang "Scala" :algo "partition" :lib "various" :id 10 :doc "https://scala-lang.org/api/current/scala/collection/Iterator.html#partition-243" :sig "-"}
+"Scala@grouped@various" {:lang "Scala" :algo "grouped" :lib "various" :id 11 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#grouped-fffffbef" :sig "-"}
+"Scala@flatten@various" {:lang "Scala" :algo "flatten" :lib "various" :id 21 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#flatten-5d3" :sig "-"}
+"Scala@mkString@various" {:lang "Scala" :algo "mkString" :lib "various" :id 21 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceExtensionMethods.html#mkString-0" :sig "-"}
+"Scala@continually@LazyList" {:lang "Scala" :algo "continually" :lib "LazyList" :id 24 :doc "https://scala-lang.org/api/current/scala/collection/immutable/LazyList$.html#continually-fffff347" :sig "-"}
+"Scala@tabulate@various" {:lang "Scala" :algo "tabulate" :lib "various" :id 25 :doc "https://scala-lang.org/api/current/scala/Array$.html#tabulate-fffffde9" :sig "-"}
+"Scala@appendedAll@various" {:lang "Scala" :algo "appendedAll" :lib "various" :id 42 :doc "https://scala-lang.org/api/current/scala/collection/immutable/IndexedSeqOps.html#appendedAll-1dd" :sig "-"}
+"Scala@++@various" {:lang "Scala" :algo "++" :lib "various" :id 42 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#++-fffff738" :sig "-"}
 })
