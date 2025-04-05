@@ -139,6 +139,7 @@
 "Python@Counter*" {:lang "Python" :algo "Counter*" :lib "collections" :id 19 :doc "https://docs.python.org/3/library/collections.html#collections.Counter" :sig "-"}
 "Clojure@frequencies" {:lang "Clojure" :algo "frequencies" :lib "core" :id 19 :doc "https://clojuredocs.org/clojure.core/frequencies" :sig "-"}
 "Racket@frequencies" {:lang "Racket" :algo "frequencies" :lib "list-utils" :id 19 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._frequencies%29%29" :sig "-"}
+"RAPIDS (Python)@value_counts" {:lang "RAPIDS (Python)" :algo "value_counts" :lib "[doc](https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.series.Series.value_counts)" :id `Series` :doc "" :sig "-"}
 "pandas@value_counts" {:lang "pandas" :algo "value_counts" :lib "Series" :id 19 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html" :sig "-"}
 "D@any" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-"}
 "Haskell@any" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-"}
@@ -358,7 +359,9 @@
 "Agda@zipWith" {:lang "Agda" :algo "zipWith" :lib "various" :id 30 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2734" :sig "-"}
 "Agda@all" {:lang "Agda" :algo "all" :lib "various" :id 31 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#4910" :sig "-"}
 "Agda@_++_" {:lang "Agda" :algo "_++_" :lib "various" :id 42 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1734" :sig "-"}
+"Kap@⍸ (where)" {:lang "Kap" :algo "⍸ (where)" :lib "-" :id 18 :doc "" :sig "-"}
 "BQN@/ (indices)" {:lang "BQN" :algo "/ (indices)" :lib "-" :id 18 :doc "https://mlochbaum.github.io/BQN/doc/replicate.html#indices" :sig "-"}
 "Uiua@⊚ (where)" {:lang "Uiua" :algo "⊚ (where)" :lib "-" :id 18 :doc "https://www.uiua.org/docs/where" :sig "-"}
 "J@I. (indices)" {:lang "J" :algo "I. (indices)" :lib "-" :id 18 :doc "https://code.jsoftware.com/wiki/Vocabulary/icapdot" :sig "-"}
+"Python@where" {:lang "Python" :algo "where" :lib "NumPy" :id 18 :doc "https://numpy.org/doc/stable/reference/generated/numpy.where.html" :sig "-"}
 })
