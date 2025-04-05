@@ -358,4 +358,7 @@
 "Agda@zipWith" {:lang "Agda" :algo "zipWith" :lib "various" :id 30 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2734" :sig "-"}
 "Agda@all" {:lang "Agda" :algo "all" :lib "various" :id 31 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#4910" :sig "-"}
 "Agda@_++_" {:lang "Agda" :algo "_++_" :lib "various" :id 42 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1734" :sig "-"}
+"BQN@/ (indices)" {:lang "BQN" :algo "/ (indices)" :lib "-" :id 18 :doc "https://mlochbaum.github.io/BQN/doc/replicate.html#indices" :sig "-"}
+"Uiua@⊚ (where)" {:lang "Uiua" :algo "⊚ (where)" :lib "-" :id 18 :doc "https://www.uiua.org/docs/where" :sig "-"}
+"J@I. (indices)" {:lang "J" :algo "I. (indices)" :lib "-" :id 18 :doc "https://code.jsoftware.com/wiki/Vocabulary/icapdot" :sig "-"}
 })
