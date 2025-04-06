@@ -141,17 +141,23 @@
                                      :selection (get info-map :lang)
                                      :how-to-generate-table :by-lang
                                      :results-table (generate-table (get info-map :lang) :by-lang)}))}
-      [:img {:src (str/join ["/media/logos/" (get-logo-filename (get info-map :lang) current-theme)]) :width "40px" :height "40px"}]]
+      [:img {:src (str/join ["/media/logos/" (get-logo-filename (get info-map :lang) current-theme)]) 
+             :width "40px" 
+             :height "40px"
+             :style {:object-fit "contain"}}]]
+     
+     ;; Second cell - language name
      [:td {:style {:padding "12px 30px"
-                   :color text-color}
-           :on-click (fn [e]
-                       (.stopPropagation e)
-                       (reset! state {:top-padding "20px"
-                                     :theme current-theme
-                                     :selection (get info-map :lang)
-                                     :how-to-generate-table :by-lang
-                                     :results-table (generate-table (get info-map :lang) :by-lang)}))}
-      (get info-map :lang)]
+                    :color text-color}
+            :on-click (fn [e]
+                        (.stopPropagation e)
+                        (reset! state {:top-padding "20px"
+                                      :theme current-theme
+                                      :selection (get info-map :lang)
+                                      :how-to-generate-table :by-lang
+                                      :results-table (generate-table (get info-map :lang) :by-lang)}))}
+       (get info-map :lang)]
+     
      [:td {:style {:padding "12px 30px"
                    :font-weight "bold"
                    :background-color (nth excel-colors color-index)}} 
