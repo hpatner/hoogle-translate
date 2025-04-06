@@ -21,8 +21,16 @@
 ; (defn extract-lang [s]
 ;   (first (str/split s #"@")))
 
+(defn paren-trim [s]
+  (if (str/includes? s "(")
+    (let [start (str/index-of s "(")
+          end (str/index-of s ")")]
+      (subs s (inc start) end))
+    s))
+
 (defn normalize-algo [algo]
   (->> algo
+       (paren-trim)
        (re-seq #"[a-zA-Z0-9]")
        (str/join)
        (str/lower-case)))
