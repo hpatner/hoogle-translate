@@ -89,3 +89,6 @@
    "Vim Script"           "vim.png"
    "Vue"                  "vue.png"
    "Zig"                  "zig_logo.svg"})
+
+;; List of languages that have dark mode logo variants
+(def darkmode-logos #{"Rust"})
