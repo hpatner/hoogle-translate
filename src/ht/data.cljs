@@ -9,6 +9,7 @@
 "Rust@fold@trait.Iterator" {:lang "Rust" :algo "fold" :lib "trait.Iterator" :id 1 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold" :sig "-"}
 "Haskell@foldl@Data.List" {:lang "Haskell" :algo "foldl" :lib "Data.List" :id 1 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:foldl" :sig "-"}
 "Racket@foldl@base" {:lang "Racket" :algo "foldl" :lib "base" :id 1 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket%2Fprivate%2Flist..rkt%29._foldl%29%29" :sig "-"}
+"Uiua@∧ (fold)@-" {:lang "Uiua" :algo "∧ (fold)" :lib "-" :id 1 :doc "https://www.uiua.org/docs/fold" :sig "-"}
 "q@over@-" {:lang "q" :algo "over" :lib "-" :id 1 :doc "https://code.kx.com/q/ref/over/" :sig "-"}
 "C++@reduce@<numeric>" {:lang "C++" :algo "reduce" :lib "<numeric>" :id 1 :doc "https://en.cppreference.com/w/cpp/algorithm/reduce" :sig "-"}
 "Clojure@reduce@core" {:lang "Clojure" :algo "reduce" :lib "core" :id 1 :doc "https://clojuredocs.org/clojure.core/reduce" :sig "-"}
@@ -19,9 +20,11 @@
 "Kotlin@reduce@collections" {:lang "Kotlin" :algo "reduce" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/reduce.html" :sig "-"}
 "Python@reduce@functools" {:lang "Python" :algo "reduce" :lib "functools" :id 1 :doc "https://docs.python.org/3/library/functools.html#functools.reduce" :sig "-"}
 "Ruby@reduce@Enumerable" {:lang "Ruby" :algo "reduce" :lib "Enumerable" :id 1 :doc "https://apidock.com/ruby/Enumerable/reduce" :sig "-"}
+"Uiua@/ (reduce)@-" {:lang "Uiua" :algo "/ (reduce)" :lib "-" :id 1 :doc "https://www.uiua.org/docs/reduce" :sig "-"}
 "APL@¨ (each)@-" {:lang "APL" :algo "¨ (each)" :lib "-" :id 2 :doc "http://microapl.com/apl_help/ch_020_020_900.htm" :sig "-"}
 "J@each@-" {:lang "J" :algo "each" :lib "-" :id 2 :doc "https://www.jsoftware.com/help/primer/each.htm" :sig "-"}
 "q@each@-" {:lang "q" :algo "each" :lib "-" :id 2 :doc "https://code.kx.com/q/ref/each/" :sig "-"}
+"Uiua@∵ (each)@-" {:lang "Uiua" :algo "∵ (each)" :lib "-" :id 2 :doc "https://www.uiua.org/docs/each" :sig "-"}
 "Clojure@map@core" {:lang "Clojure" :algo "map" :lib "core" :id 2 :doc "https://clojuredocs.org/clojure.core/map" :sig "-"}
 "D@map@algorithm.iteration" {:lang "D" :algo "map" :lib "algorithm.iteration" :id 2 :doc "https://dlang.org/library/std/algorithm/iteration/map.html" :sig "-"}
 "Elixir@map@Enum" {:lang "Elixir" :algo "map" :lib "Enum" :id 2 :doc "https://hexdocs.pm/elixir/Enum.html#map/2" :sig "-"}
@@ -34,8 +37,10 @@
 "Rust@map@trait.Iterator" {:lang "Rust" :algo "map" :lib "trait.Iterator" :id 2 :doc "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map" :sig "-"}
 "Scala@map@various" {:lang "Scala" :algo "map" :lib "various" :id 2 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#map-5d3" :sig "-"}
 "C++@transform@<algorithm>" {:lang "C++" :algo "transform" :lib "<algorithm>" :id 2 :doc "https://en.cppreference.com/w/cpp/algorithm/transform" :sig "-"}
+"Uiua@≡ (rows)@-" {:lang "Uiua" :algo "≡ (rows)" :lib "-" :id 2 :doc "https://www.uiua.org/docs/rows" :sig "-"}
 "APL@/ (compress)@-" {:lang "APL" :algo "/ (compress)" :lib "-" :id 3 :doc "http://microapl.com/apl_help/ch_020_020_840.htm" :sig "-"}
 "Haskell@filter@Data.List" {:lang "Haskell" :algo "filter" :lib "Data.List" :id 3 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:filter" :sig "-"}
+"Uiua@▽ (keep)@-" {:lang "Uiua" :algo "▽ (keep)" :lib "-" :id 3 :doc "https://www.uiua.org/docs/keep" :sig "-"}
 "J@\\ (prefix)@-" {:lang "J" :algo "\\ (prefix)" :lib "-" :id 4 :doc "https://code.jsoftware.com/wiki/Vocabulary/bslash" :sig "-"}
 "APL@\\ (scan)@-" {:lang "APL" :algo "\\ (scan)" :lib "-" :id 4 :doc "http://microapl.com/apl_help/ch_020_020_820.htm" :sig "-"}
 "Python@accumulate@itertools" {:lang "Python" :algo "accumulate" :lib "itertools" :id 4 :doc "https://docs.python.org/3/library/itertools.html#itertools.accumulate" :sig "-"}
@@ -53,6 +58,7 @@
 "Haskell@scanl1@Data.List" {:lang "Haskell" :algo "scanl1" :lib "Data.List" :id 4 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:scanl1" :sig "-"}
 "Python@cumsum@RAPIDS cuDF" {:lang "Python" :algo "cumsum" :lib "RAPIDS cuDF" :id 4 :doc "https://docs.rapids.ai/api/cudf/nightly/api.html#cudf.core.series.Series.cumsum" :sig "-"}
 "Python@cumsum@pandas" {:lang "Python" :algo "cumsum" :lib "pandas" :id 4 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.cumsum.html?highlight=cumsum#pandas.Series.cumsum" :sig "-"}
+"Uiua@\\ (scan)@-" {:lang "Uiua" :algo "\\ (scan)" :lib "-" :id 4 :doc "https://www.uiua.org/docs/scan" :sig "-"}
 "APL@/ (n-wise reduce)@-" {:lang "APL" :algo "/ (n-wise reduce)" :lib "-" :id 5 :doc "http://microapl.com/apl_help/ch_020_020_800.htm" :sig "-"}
 "C++@adjacent_difference@<numeric>" {:lang "C++" :algo "adjacent_difference" :lib "<numeric>" :id 5 :doc "https://en.cppreference.com/w/cpp/algorithm/adjacent_difference" :sig "-"}
 "CUDA@adjacent_difference@Thrust" {:lang "CUDA" :algo "adjacent_difference" :lib "Thrust" :id 5 :doc "https://thrust.github.io/doc/group__transformations_gaa41d309b53fa03bf13fe35a184148400.html" :sig "-"}
@@ -60,6 +66,7 @@
 "q@prior@-" {:lang "q" :algo "prior" :lib "-" :id 5 :doc "https://code.kx.com/q/ref/prior/" :sig "-"}
 "Kotlin@zipWithNext@collections" {:lang "Kotlin" :algo "zipWithNext" :lib "collections" :id 5 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/zip-with-next.html" :sig "-"}
 "Python@pairwise@itertools" {:lang "Python" :algo "pairwise" :lib "itertools" :id 5 :doc "https://docs.python.org/3/library/itertools.html#itertools.pairwise" :sig "-"}
+"Uiua@⧈ (stencil)@-" {:lang "Uiua" :algo "⧈ (stencil)" :lib "-" :id 5 :doc "https://www.uiua.org/docs/stencil" :sig "-"}
 "APL@∘. (outer product)@-" {:lang "APL" :algo "∘. (outer product)" :lib "-" :id 6 :doc "http://microapl.com/apl_help/ch_020_020_890.htm" :sig "-"}
 "Haskell@outerProduct@Data.List.HT" {:lang "Haskell" :algo "outerProduct" :lib "Data.List.HT" :id 6 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:outerProduct" :sig "-"}
 "Clojure@outer-product@core.matrix" {:lang "Clojure" :algo "outer-product" :lib "core.matrix" :id 6 :doc "https://mikera.github.io/core.matrix/doc/clojure.core.matrix.html#var-outer-product" :sig "-"}
@@ -78,6 +85,7 @@
 "CUDA@sequence@Thrust" {:lang "CUDA" :algo "sequence" :lib "Thrust" :id 8 :doc "https://thrust.github.io/doc/group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html" :sig "-"}
 "q@til@-" {:lang "q" :algo "til" :lib "-" :id 8 :doc "https://code.kx.com/q/ref/til/" :sig "-"}
 "Scala@until@Range" {:lang "Scala" :algo "until" :lib "Range" :id 8 :doc "https://scala-lang.org/api/current/scala/collection/immutable/Range.html" :sig "-"}
+"Uiua@⇡ (range)@-" {:lang "Uiua" :algo "⇡ (range)" :lib "-" :id 8 :doc "https://www.uiua.org/docs/range" :sig "-"}
 "D@enumerate@range" {:lang "D" :algo "enumerate" :lib "range" :id 9 :doc "https://dlang.org/library/std/range/enumerate.html" :sig "-"}
 "Python@enumerate@-" {:lang "Python" :algo "enumerate" :lib "-" :id 9 :doc "https://docs.python.org/3/library/functions.html#enumerate" :sig "-"}
 "Racket@enumerate@list-utils" {:lang "Racket" :algo "enumerate" :lib "list-utils" :id 9 :doc "https://docs.racket-lang.org/list-utils/index.html?q=freq#%28def._%28%28lib._list-utils%2Fmain..rkt%29._enumerate%29%29" :sig "-"}
@@ -115,6 +123,7 @@
 "Elixir@uniq@Enum" {:lang "Elixir" :algo "uniq" :lib "Enum" :id 15 :doc "https://hexdocs.pm/elixir/Enum.html#uniq/1" :sig "-"}
 "Ruby@uniq@Array" {:lang "Ruby" :algo "uniq" :lib "Array" :id 15 :doc "https://apidock.com/ruby/Array/uniq" :sig "-"}
 "Rust@unique@itertools" {:lang "Rust" :algo "unique" :lib "itertools" :id 15 :doc "https://docs.rs/itertools/0.7.6/itertools/structs/struct.Unique.html" :sig "-"}
+"Uiua@◴ (deduplicate)@-" {:lang "Uiua" :algo "◴ (deduplicate)" :lib "-" :id 15 :doc "https://www.uiua.org/docs/deduplicate" :sig "-"}
 "J@\": (default format)@-" {:lang "J" :algo "\": (default format)" :lib "-" :id 16 :doc "https://code.jsoftware.com/wiki/Vocabulary/quoteco" :sig "-"}
 "APL@⍕ (format)@-" {:lang "APL" :algo "⍕ (format)" :lib "-" :id 16 :doc "http://microapl.com/apl_help/ch_020_020_680.htm" :sig "-"}
 "Haskell@show@Prelude" {:lang "Haskell" :algo "show" :lib "Prelude" :id 16 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:show" :sig "-"}
@@ -134,6 +143,7 @@
 "Ruby@include?@various" {:lang "Ruby" :algo "include?" :lib "various" :id 17 :doc "https://apidock.com/ruby/Array/include%3F" :sig "-"}
 "Racket@member*@base" {:lang "Racket" :algo "member*" :lib "base" :id 17 :doc "https://docs.racket-lang.org/reference/pairs.html?q=map#%28def._%28%28lib._racket%2Fprivate%2Fbase..rkt%29._member%29%29" :sig "-"}
 "Elixir@member?@Enum" {:lang "Elixir" :algo "member?" :lib "Enum" :id 17 :doc "https://hexdocs.pm/elixir/Enum.html#member?/2" :sig "-"}
+"Uiua@∊ (memberof)@-" {:lang "Uiua" :algo "∊ (memberof)" :lib "-" :id 17 :doc "http://uiua.org/docs/memberof" :sig "-"}
 "APL@⍸ (where)@-" {:lang "APL" :algo "⍸ (where)" :lib "-" :id 18 :doc "https://help.dyalog.com/17.1/#Language/Primitive%20Functions/Where.htm#kanchor3608" :sig "-"}
 "q@where@-" {:lang "q" :algo "where" :lib "-" :id 18 :doc "https://code.kx.com/q4m3/A_Built-in_Functions/#a107-where" :sig "-"}
 "Haskell@count@Data.List.Unique" {:lang "Haskell" :algo "count" :lib "Data.List.Unique" :id 19 :doc "https://hackage.haskell.org/package/Unique-0.4.7.7/docs/Data-List-Unique.html#v:count" :sig "-"}
@@ -166,6 +176,7 @@
 "F#@join@String" {:lang "F#" :algo "join" :lib "String" :id 21 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.string.join?view=netframework-4.8" :sig "-"}
 "Python@join*@str" {:lang "Python" :algo "join*" :lib "str" :id 21 :doc "https://docs.python.org/3/library/stdtypes.html#str.join" :sig "-"}
 "Kotlin@joinTo@collections" {:lang "Kotlin" :algo "joinTo" :lib "collections" :id 21 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to.html" :sig "-"}
+"Uiua@⊂ (join)@-" {:lang "Uiua" :algo "⊂ (join)" :lib "-" :id 21 :doc "https://www.uiua.org/docs/join" :sig "-"}
 "Python@zip(*)@-" {:lang "Python" :algo "zip(*)" :lib "-" :id 22 :doc "https://docs.python.org/3/library/functions.html#zip" :sig "-"}
 "Python@transpose@pandas" {:lang "Python" :algo "transpose" :lib "pandas" :id 22 :doc "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.transpose.html" :sig "-"}
 "Ruby@transpose@Array" {:lang "Ruby" :algo "transpose" :lib "Array" :id 22 :doc "https://apidock.com/ruby/Array/transpose" :sig "-"}
@@ -177,6 +188,7 @@
 "Scala@transpose@various" {:lang "Scala" :algo "transpose" :lib "various" :id 22 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#transpose-fffff875" :sig "-"}
 "D@transposed@range" {:lang "D" :algo "transposed" :lib "range" :id 22 :doc "https://dlang.org/library/std/range/transposed.html" :sig "-"}
 "Python@transpose@RAPIDS cuDF" {:lang "Python" :algo "transpose" :lib "RAPIDS cuDF" :id 22 :doc "https://docs.rapids.ai/api/cudf/stable/api.html#cudf.core.dataframe.DataFrame.transpose" :sig "-"}
+"Uiua@⍉ (transpose)@-" {:lang "Uiua" :algo "⍉ (transpose)" :lib "-" :id 22 :doc "https://www.uiua.org/docs/transpose" :sig "-"}
 "APL@⊆ (partition)@-" {:lang "APL" :algo "⊆ (partition)" :lib "-" :id 23 :doc "http://microapl.com/apl_help/ch_020_020_590.htm" :sig "-"}
 "Haskell@groupBy@Data.List.HT" {:lang "Haskell" :algo "groupBy" :lib "Data.List.HT" :id 23 :doc "https://hackage.haskell.org/package/utility-ht-0.0.15/docs/Data-List-HT.html#v:groupBy" :sig "-"}
 "Python@groupby@itertools" {:lang "Python" :algo "groupby" :lib "itertools" :id 23 :doc "https://docs.python.org/3/library/itertools.html#itertools.groupby" :sig "-"}
@@ -187,6 +199,7 @@
 "Ruby@slice_when@Enumerable" {:lang "Ruby" :algo "slice_when" :lib "Enumerable" :id 23 :doc "https://apidock.com/ruby/v2_5_5/Enumerable/slice_when" :sig "-"}
 "C++@chunk_by@range-v3" {:lang "C++" :algo "chunk_by" :lib "range-v3" :id 23 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "-"}
 "C++@chunk_by@<ranges>" {:lang "C++" :algo "chunk_by" :lib "<ranges>" :id 23 :doc "https://en.cppreference.com/w/cpp/ranges/chunk_by_view" :sig "-"}
+"Uiua@⊜ (partition)@-" {:lang "Uiua" :algo "⊜ (partition)" :lib "-" :id 23 :doc "https://www.uiua.org/docs/partition" :sig "-"}
 "Haskell@repeat@Prelude" {:lang "Haskell" :algo "repeat" :lib "Prelude" :id 24 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:repeat" :sig "-"}
 "Clojure@repeat@core" {:lang "Clojure" :algo "repeat" :lib "core" :id 24 :doc "https://clojuredocs.org/clojure.core/repeat" :sig "-"}
 "C++@repeat@range-v3" {:lang "C++" :algo "repeat" :lib "range-v3" :id 24 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "-"}
@@ -196,6 +209,7 @@
 "C++@repeat_n@range-v3" {:lang "C++" :algo "repeat_n" :lib "range-v3" :id 25 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "-"}
 "C#@repeat@Enumerable" {:lang "C#" :algo "repeat" :lib "Enumerable" :id 25 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.repeat?view=netcore-3.1" :sig "-"}
 "APL@\\ (expand)@-" {:lang "APL" :algo "\\ (expand)" :lib "-" :id 25 :doc "http://microapl.com/apl_help/ch_020_020_860.htm" :sig "-"}
+"Uiua@▽ (keep)@-" {:lang "Uiua" :algo "▽ (keep)" :lib "-" :id 25 :doc "https://www.uiua.org/docs/keep" :sig "-"}
 "C++@transform*@<algorithm>" {:lang "C++" :algo "transform*" :lib "<algorithm>" :id 30 :doc "https://en.cppreference.com/w/cpp/algorithm/transform" :sig "-"}
 "Haskell@zipWith@Prelude" {:lang "Haskell" :algo "zipWith" :lib "Prelude" :id 30 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:zipWith" :sig "-"}
 "Clojure@map*@core" {:lang "Clojure" :algo "map*" :lib "core" :id 30 :doc "https://clojuredocs.org/clojure.core/map" :sig "-"}
@@ -270,6 +284,7 @@
 "Rust@rotate_left@Slice" {:lang "Rust" :algo "rotate_left" :lib "Slice" :id 4104 :doc "https://doc.rust-lang.org/stable/std/primitive.slice.html#method.rotate_left" :sig "-"}
 "Julia@circshift@" {:lang "Julia" :algo "circshift" :lib "" :id 4104 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.circshift" :sig "-"}
 "q@rotate@Core" {:lang "q" :algo "rotate" :lib "Core" :id 4104 :doc "https://code.kx.com/q4m3/A_Built-in_Functions/#a79-rotate" :sig "-"}
+"Uiua@↻ (rotate)@-" {:lang "Uiua" :algo "↻ (rotate)" :lib "-" :id 4104 :doc "https://www.uiua.org/docs/rotate" :sig "-"}
 "Rust@dedup@itertools" {:lang "Rust" :algo "dedup" :lib "itertools" :id 15 :doc "https://docs.rs/itertools/0.7.6/itertools/structs/struct.Dedup.html" :sig "-"}
 "Racket@remove-duplicates@" {:lang "Racket" :algo "remove-duplicates" :lib "" :id 15 :doc "https://docs.racket-lang.org/reference/pairs.html#%28def._%28%28lib._racket/list..rkt%29._remove-duplicates%29%29" :sig "-"}
 "OCaml@sort_uniq@List" {:lang "OCaml" :algo "sort_uniq" :lib "List" :id 15 :doc "https://ocaml.org/api/List.html#VALsort_uniq" :sig "-"}
