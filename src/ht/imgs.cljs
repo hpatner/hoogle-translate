@@ -40,7 +40,7 @@
    "Java"                 "java_logo.png"
    "JavaScript"           "javascript_logo.png"
    "jq"                   "jq.jpg"
-   "Julia"                "julia_logo.svg"
+   "Julia"                "julia_logo.png"
    "Jupyter Notebook"     "jupyter_logo.png"
    "Kap"                  "kap.png"
    "Kotlin"               "kotlin-2.svg"
@@ -91,4 +91,4 @@
    "Zig"                  "zig_logo.svg"})
 
 ;; List of languages that have dark mode logo variants
-(def darkmode-logos #{"Rust"})
+(def darkmode-logos #{"Rust" "Julia"})
