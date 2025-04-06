@@ -314,7 +314,7 @@
 "Gleam@map2@list" {:lang "Gleam" :algo "map2" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map2" :sig "-"}
 "Gleam@scan@list" {:lang "Gleam" :algo "scan" :lib "list" :id 4 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#scan" :sig "-"}
 "Kap@⌻ (outer product)@-" {:lang "Kap" :algo "⌻ (outer product)" :lib "-" :id 6 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_outer_product" :sig "-"}
-"Uiua@⊞ (table)@-" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/tables" :sig "-"}
+"Uiua@⊞ (table)@-" {:lang "Uiua" :algo "⊞ (table)" :lib "-" :id 6 :doc "https://www.uiua.org/docs/table" :sig "-"}
 "Common Lisp@reduce@-" {:lang "Common Lisp" :algo "reduce" :lib "-" :id 1 :doc "https://novaspec.org/cl/f_reduce" :sig "-"}
 "Common Lisp@map@-" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-"}
 "Mathematica@Fold@-" {:lang "Mathematica" :algo "Fold" :lib "-" :id 1 :doc "https://reference.wolfram.com/language/ref/Fold.html" :sig "-"}
