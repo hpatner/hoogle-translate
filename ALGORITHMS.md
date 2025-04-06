@@ -394,3 +394,17 @@
 |    Scala    |             `++`             |   42   |        `various`        |                              [doc](https://scala-lang.org/api/current/scala/collection/ArrayOps.html#++-fffff738)                              |
 |   Python    |           `outer`            |   6    |         `Numpy`         |                                    [doc](https://numpy.org/doc/stable/reference/generated/numpy.outer.html)                                    |
 |   Excel     |           `sequence`         |   8    |         `-`             |                                    [doc](https://exceljet.net/functions/sequence-function)                                                     |
+|   Excel     |           `map`              |   2    |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/map-function-48006093-f97c-47c1-bfcc-749263bb1f01)          |
+|   Excel     |           `reduce`           |   1    |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/reduce-function-42e39910-b345-45f3-84b8-0642b568b7cb)       |
+|   Excel     |           `scan`             |   4    |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/scan-function-d58dfd11-9969-4439-b2dc-e7062724de29)         |
+|   Excel     |           `filter`           |   3    |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759)       |
+|   Excel     |           `unique`           |   15   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e)       |
+|   Excel     |           `arraytotext`      |   16   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/arraytotext-function-9cdcad46-2fa5-4c6b-ac92-14e7bc862b8b)  |
+|   Excel     |           `textjoin`         |   16   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/textjoin-function-357b449a-ec91-49d0-80c3-0e8fc845691c)     |
+|   Excel     |           `= (equal)`        |   17   |         `-`             |                                   [doc]("<item>=<array>)                                                                                       |
+|   Excel     |           `textjoin`         |   21   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/textjoin-function-357b449a-ec91-49d0-80c3-0e8fc845691c)     |
+|   Excel     |           `transpose`        |   22   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/transpose-function-ed039415-ed8a-4a81-93e9-4b6dfac76027)    |
+|   Excel     |           `groupby`          |   23   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/groupby-function-5e08ae8c-6800-4b72-b623-c41773611505)      |
+|   Excel     |           `expand`           |   24   |         `-`             |                                   [doc](https://support.microsoft.com/en-us/office/expand-function-7433fba5-4ad1-41da-a904-d5d95808bc38)       |
+
+
