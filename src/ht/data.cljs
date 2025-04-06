@@ -209,7 +209,6 @@
 "C++@repeat_n@range-v3" {:lang "C++" :algo "repeat_n" :lib "range-v3" :id 25 :doc "https://ericniebler.github.io/range-v3/index.html#tutorial-views" :sig "-"}
 "C#@repeat@Enumerable" {:lang "C#" :algo "repeat" :lib "Enumerable" :id 25 :doc "https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.repeat?view=netcore-3.1" :sig "-"}
 "APL@\\ (expand)@-" {:lang "APL" :algo "\\ (expand)" :lib "-" :id 25 :doc "http://microapl.com/apl_help/ch_020_020_860.htm" :sig "-"}
-"Uiua@▽ (keep)@-" {:lang "Uiua" :algo "▽ (keep)" :lib "-" :id 25 :doc "https://www.uiua.org/docs/keep" :sig "-"}
 "C++@transform*@<algorithm>" {:lang "C++" :algo "transform*" :lib "<algorithm>" :id 30 :doc "https://en.cppreference.com/w/cpp/algorithm/transform" :sig "-"}
 "Haskell@zipWith@Prelude" {:lang "Haskell" :algo "zipWith" :lib "Prelude" :id 30 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:zipWith" :sig "-"}
 "Clojure@map*@core" {:lang "Clojure" :algo "map*" :lib "core" :id 30 :doc "https://clojuredocs.org/clojure.core/map" :sig "-"}
