@@ -12,7 +12,11 @@ from PIL import Image
 
 
 def count_languages():
-    with open("ALGORITHMS.md", encoding="utf-8") as file:
+    # Get the root directory of the project (parent of scripts directory)
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    algorithms_path = os.path.join(root_dir, "ALGORITHMS.md")
+
+    with open(algorithms_path, encoding="utf-8") as file:
         content = file.read()
 
     # Skip the header row and extract table rows
@@ -37,10 +41,10 @@ def count_languages():
         print(f"{language}: {count}")
 
     # Create a bar chart with logos
-    create_bar_chart_with_logos(counts)
+    create_bar_chart_with_logos(counts, root_dir)
 
 
-def find_logo(language):
+def find_logo(language, root_dir):
     """Find a logo file for the given language in public/media/logos directory"""
     # Define special case mappings for language names with special characters
     special_cases = {
@@ -97,7 +101,7 @@ def find_logo(language):
         print(f"C++ variations to try: {name_variations}")
 
     # List all files in the logos directory
-    logo_dir = "public/media/logos/"
+    logo_dir = os.path.join(root_dir, "public/media/logos/")
     try:
         all_logo_files = os.listdir(logo_dir)
         if is_cpp:
@@ -178,7 +182,7 @@ def resize_image_to_20x20(img_path):
         return None
 
 
-def create_bar_chart_with_logos(counts):
+def create_bar_chart_with_logos(counts, root_dir):
     # Get data sorted by count (descending)
     languages, counts_values = zip(*counts.most_common())
 
@@ -199,7 +203,7 @@ def create_bar_chart_with_logos(counts):
 
     # Add logos to the top of each bar
     for i, (language, bar) in enumerate(zip(languages, bars)):
-        logo_path = find_logo(language)
+        logo_path = find_logo(language, root_dir)
         if logo_path:
             try:
                 # Process the image based on its type (SVG or other)
@@ -242,8 +246,9 @@ def create_bar_chart_with_logos(counts):
     plt.subplots_adjust(top=0.95)  # Increased from 0.85 to 0.95 to reduce space
 
     # Save the chart
-    plt.savefig("language_counts_with_logos.png", dpi=300)
-    print("Bar chart saved as 'language_counts_with_logos.png'")
+    output_path = os.path.join(root_dir, "language_counts_with_logos.png")
+    plt.savefig(output_path, dpi=300)
+    print(f"Bar chart saved as '{output_path}'")
 
     # Show the chart
     plt.show()

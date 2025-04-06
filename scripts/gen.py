@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+
 
 def parse_md_table(content):
     """Parse a markdown table and extract data rows."""
@@ -65,8 +67,13 @@ def generate_clojure_map(data_rows):
 
 
 def main():
+    # Get the root directory of the project (parent of scripts directory)
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    algorithms_path = os.path.join(root_dir, "ALGORITHMS.md")
+    output_path = os.path.join(root_dir, "src", "ht", "data.cljs")
+
     # Read ALGORITHMS.md file from root directory
-    with open("ALGORITHMS.md", encoding="utf-8") as file:
+    with open(algorithms_path, encoding="utf-8") as file:
         content = file.read()
 
     # Parse the markdown table
@@ -75,11 +82,11 @@ def main():
     # Generate the Clojure map
     clojure_map = generate_clojure_map(data_rows)
 
-    # Write to data_temp.cljs in root directory
-    with open("src/ht/data.cljs", "w", encoding="utf-8") as outfile:
+    # Write to data.cljs in src/ht directory
+    with open(output_path, "w", encoding="utf-8") as outfile:
         outfile.write(clojure_map)
 
-    print(f"Successfully generated data_temp.cljs with {len(data_rows)} entries.")
+    print(f"Successfully generated {output_path} with {len(data_rows)} entries.")
 
 
 if __name__ == "__main__":

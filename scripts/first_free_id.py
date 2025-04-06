@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import os
+
 
 def first_free_id(content):
     lines = content.strip().split("\n")
@@ -13,7 +15,10 @@ def first_free_id(content):
 
 
 def main():
-    with open("ALGORITHMS.md", encoding="utf-8") as file:
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    algorithms_path = os.path.join(root_dir, "ALGORITHMS.md")
+
+    with open(algorithms_path, encoding="utf-8") as file:
         content = file.read()
     print(first_free_id(content))
 
