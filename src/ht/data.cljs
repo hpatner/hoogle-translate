@@ -357,7 +357,7 @@
 "Agda@map@various" {:lang "Agda" :algo "map" :lib "various" :id 2 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1634" :sig "-"}
 "Agda@filter@various" {:lang "Agda" :algo "filter" :lib "various" :id 3 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#10687" :sig "-"}
 "Agda@scanl@various" {:lang "Agda" :algo "scanl" :lib "various" :id 4 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Scans.Base.html#1105" :sig "-"}
-"Agda@cartesianProductWith@Data.List" {:lang "Agda" :algo "cartesianProductWith" :lib "Data.List" :id 6 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2132" :sig "-"}
+"Agda@cartesianProductWith@Data.List" {:lang "Agda" :algo "cartesianProductWith" :lib "Data.List" :id 26 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2132" :sig "-"}
 "Agda@cartesianProduct@Data.List" {:lang "Agda" :algo "cartesianProduct" :lib "Data.List" :id 100 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#2317" :sig "-"}
 "Agda@upTo@Data.List" {:lang "Agda" :algo "upTo" :lib "Data.List" :id 8 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#6689" :sig "-"}
 "Agda@allFin@Data.Vec" {:lang "Agda" :algo "allFin" :lib "Data.Vec" :id 8 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.Vec.Base.html#6708" :sig "-"}
@@ -381,7 +381,8 @@
 "J@I. (indices)@-" {:lang "J" :algo "I. (indices)" :lib "-" :id 18 :doc "https://code.jsoftware.com/wiki/Vocabulary/icapdot" :sig "-"}
 "Python@where@NumPy" {:lang "Python" :algo "where" :lib "NumPy" :id 18 :doc "https://numpy.org/doc/stable/reference/generated/numpy.where.html" :sig "-"}
 "BQN@⍷ (deduplicate)@-" {:lang "BQN" :algo "⍷ (deduplicate)" :lib "-" :id 15 :doc "https://mlochbaum.github.io/BQN/doc/selfcmp.html#deduplicate" :sig "-"}
-"Scala@sliding(2)@various" {:lang "Scala" :algo "sliding(2)" :lib "various" :id 5 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#sliding-fffffbef" :sig "-"}
+"Scala@sliding@various" {:lang "Scala" :algo "sliding" :lib "various" :id 27 :doc "https://scala-lang.org/api/current/scala/collection/IterableOps.html#sliding-fffffbef" :sig "-"}
+"C++@sliding@<ranges>" {:lang "C++" :algo "sliding" :lib "<ranges>" :id 27 :doc "https://en.cppreference.com/w/cpp/ranges/slide_view" :sig "-"}
 "Scala@partition@various" {:lang "Scala" :algo "partition" :lib "various" :id 10 :doc "https://scala-lang.org/api/current/scala/collection/Iterator.html#partition-243" :sig "-"}
 "Scala@grouped@various" {:lang "Scala" :algo "grouped" :lib "various" :id 11 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#grouped-fffffbef" :sig "-"}
 "Scala@flatten@various" {:lang "Scala" :algo "flatten" :lib "various" :id 21 :doc "https://scala-lang.org/api/current/scala/collection/IterableOnceOps.html#flatten-5d3" :sig "-"}
