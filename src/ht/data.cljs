@@ -15,6 +15,7 @@
 "CUDA@reduce@Thrust" {:lang "CUDA" :algo "reduce" :lib "Thrust" :id 1 :doc "https://thrust.github.io/doc/group__reductions_ga43eea9a000f912716189687306884fc7.html" :sig "-"}
 "D@reduce@algorithm.iteration" {:lang "D" :algo "reduce" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/reduce.html" :sig "-"}
 "Elixir@reduce@Enum" {:lang "Elixir" :algo "reduce" :lib "Enum" :id 1 :doc "https://hexdocs.pm/elixir/Enum.html#reduce/2" :sig "-"}
+"Java@reduce@Streams" {:lang "Java" :algo "reduce" :lib "Streams" :id 1 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#reduce-java.util.function.BinaryOperator-" :sig "-"}
 "Kotlin@reduce@collections" {:lang "Kotlin" :algo "reduce" :lib "collections" :id 1 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/reduce.html" :sig "-"}
 "Python@reduce@functools" {:lang "Python" :algo "reduce" :lib "functools" :id 1 :doc "https://docs.python.org/3/library/functools.html#functools.reduce" :sig "-"}
 "Ruby@reduce@Enumerable" {:lang "Ruby" :algo "reduce" :lib "Enumerable" :id 1 :doc "https://apidock.com/ruby/Enumerable/reduce" :sig "-"}
@@ -25,6 +26,7 @@
 "D@map@algorithm.iteration" {:lang "D" :algo "map" :lib "algorithm.iteration" :id 2 :doc "https://dlang.org/library/std/algorithm/iteration/map.html" :sig "-"}
 "Elixir@map@Enum" {:lang "Elixir" :algo "map" :lib "Enum" :id 2 :doc "https://hexdocs.pm/elixir/Enum.html#map/2" :sig "-"}
 "Haskell@map@Data.List" {:lang "Haskell" :algo "map" :lib "Data.List" :id 2 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:map" :sig "-"}
+"Java@map@Streams" {:lang "Java" :algo "map" :lib "Streams" :id 2 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#map-java.util.function.Function-" :sig "-"}
 "Kotlin@map@collections" {:lang "Kotlin" :algo "map" :lib "collections" :id 2 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map.html" :sig "-"}
 "Python@map@-" {:lang "Python" :algo "map" :lib "-" :id 2 :doc "https://docs.python.org/3/library/functions.html#map" :sig "-"}
 "Racket@map@base" {:lang "Racket" :algo "map" :lib "base" :id 2 :doc "https://docs.racket-lang.org/reference/pairs.html?q=map#%28def._%28%28lib._racket%2Fprivate%2Fmap..rkt%29._map%29%29" :sig "-"}
